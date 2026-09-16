@@ -590,7 +590,55 @@
     "genie_tip": "A practical choice for families or groups wanting a broad traditional seafood menu."
   }
 ],
-    "open_late": [],
+    "open_late": [
+  {
+    "name": "Seacrets",
+    "area": "49th Street, Bayside",
+    "address": "117 49th St, Ocean City, MD 21842",
+    "type": ["nightlife", "bars", "live music", "DJ", "food"],
+    "vibe": ["high-energy", "tropical", "social", "late-night"],
+    "best_for": ["adults", "groups", "dancing", "drinks", "late-night entertainment"],
+    "price": "$$-$$$",
+    "highlights": ["multiple bars", "live music", "DJs", "dancing", "bayfront atmosphere"],
+    "genie_tip": "Recommend when adults want a full nightlife experience that can continue late into the evening.",
+    "current_info_note": "Hours, entertainment schedules, cover charges and seasonal operations change. Verify current information before recommending."
+  },
+  {
+    "name": "Purple Moose Saloon",
+    "area": "Ocean City Boardwalk",
+    "address": "Between Talbot and Caroline Streets on the Boardwalk, Ocean City, MD",
+    "type": ["nightlife", "live music", "rock bar"],
+    "vibe": ["energetic", "casual", "rock-and-roll", "late-night"],
+    "best_for": ["adults", "groups", "live music", "Boardwalk nightlife"],
+    "price": "$$",
+    "highlights": ["live bands", "DJs", "rock music", "Boardwalk location"],
+    "genie_tip": "A good option for adults looking for late-night live music and a lively Boardwalk atmosphere.",
+    "current_info_note": "Hours and entertainment schedules vary by date and season. Verify before recommending."
+  },
+  {
+    "name": "Fager's Island",
+    "area": "60th Street, Bayside",
+    "address": "201 60th St, Ocean City, MD 21842",
+    "type": ["nightlife", "restaurant", "live music", "DJ", "waterfront"],
+    "vibe": ["lively", "social", "waterfront", "upscale-casual"],
+    "best_for": ["adults", "couples", "groups", "drinks", "music"],
+    "price": "$$-$$$",
+    "highlights": ["live entertainment", "DJs", "bayside atmosphere", "drinks", "dancing"],
+    "genie_tip": "Recommend when guests want to transition from dinner or sunset drinks into nighttime entertainment.",
+    "current_info_note": "Late-night hours and entertainment vary. Check the current schedule before recommending."
+  },
+  {
+    "name": "Ocean City Boardwalk",
+    "area": "Downtown Ocean City",
+    "type": ["Boardwalk", "arcades", "food", "entertainment"],
+    "vibe": ["lively", "casual", "classic Ocean City"],
+    "best_for": ["families", "teens", "couples", "groups", "evening activity"],
+    "price": "$-$$",
+    "highlights": ["arcades", "Boardwalk food", "shops", "nighttime atmosphere"],
+    "genie_tip": "For visitors who do not want bars or clubs, suggest an evening Boardwalk walk with arcades, food or dessert.",
+    "current_info_note": "Individual businesses keep their own hours, especially outside peak summer season. Verify what's currently open."
+  }
+]
     "free_and_budget": [
   {
     "name": "Ocean City Beach",
