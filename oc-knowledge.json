@@ -102,7 +102,78 @@
     "current_info_note": "Band schedules and operating hours vary by date and season. Check the current calendar."
   }
 ],
-    "family": [],
+    "family": [
+  {
+    "name": "Jolly Roger Amusement Park",
+    "area": "30th Street",
+    "address": "2901 Coastal Hwy, Ocean City, MD 21842",
+    "type": ["amusement park", "rides", "family attraction"],
+    "vibe": ["fun", "energetic", "family-friendly"],
+    "best_for": ["families", "kids", "teens", "groups"],
+    "price": "$$-$$$",
+    "highlights": ["amusement rides", "mini golf", "go-karts nearby", "family entertainment"],
+    "seasonal": true,
+    "genie_tip": "A strong choice when families want several activities in one area. Match recommendations to the children's ages and interests.",
+    "current_info_note": "Operating dates, hours and individual attractions vary seasonally and with weather."
+  },
+  {
+    "name": "Splash Mountain Water Park",
+    "area": "30th Street",
+    "address": "2901 Coastal Hwy, Ocean City, MD 21842",
+    "type": ["water park", "slides", "family attraction"],
+    "vibe": ["active", "fun", "family-friendly"],
+    "best_for": ["families", "kids", "teens", "hot days"],
+    "price": "$$-$$$",
+    "highlights": ["water slides", "lazy river", "splash areas", "family water attractions"],
+    "seasonal": true,
+    "genie_tip": "Recommend for families looking for an alternative to spending the entire day on the beach.",
+    "current_info_note": "This is a seasonal attraction. Verify current operating dates, weather conditions and hours."
+  },
+  {
+    "name": "Trimper Rides",
+    "area": "South End of the Boardwalk",
+    "address": "700 S Atlantic Ave, Ocean City, MD 21842",
+    "type": ["amusement park", "rides", "Boardwalk attraction"],
+    "vibe": ["nostalgic", "lively", "family-friendly"],
+    "best_for": ["families", "young kids", "teens", "Boardwalk evenings"],
+    "price": "$$",
+    "highlights": ["historic amusement rides", "family rides", "thrill rides", "Boardwalk location"],
+    "seasonal": true,
+    "genie_tip": "A classic Ocean City family experience that's easy to combine with dinner, Boardwalk treats and an evening walk.",
+    "current_info_note": "Ride schedules and operating hours vary by season and weather."
+  },
+  {
+    "name": "Northside Park",
+    "area": "125th Street, Bayside",
+    "address": "200 125th St, Ocean City, MD 21842",
+    "type": ["park", "playground", "outdoor recreation"],
+    "vibe": ["relaxed", "spacious", "family-friendly"],
+    "best_for": ["families", "young kids", "picnics", "budget travelers"],
+    "price": "Free",
+    "highlights": ["playgrounds", "walking paths", "picnic areas", "fishing and crabbing piers", "open space"],
+    "genie_tip": "A good free family option when parents want space for kids to play away from the busy Boardwalk."
+  },
+  {
+    "name": "Ocean City Beach",
+    "area": "Oceanfront",
+    "type": ["beach", "outdoor", "family activity"],
+    "vibe": ["relaxing", "active", "family-friendly"],
+    "best_for": ["families", "kids", "teens", "budget travelers"],
+    "price": "Free",
+    "highlights": ["10 miles of beach", "swimming", "sandcastles", "beach games", "ocean views"],
+    "genie_tip": "The easiest free family activity in Ocean City. Tailor suggestions around weather, children's ages and how active the family wants to be."
+  },
+  {
+    "name": "Ocean City Boardwalk",
+    "area": "Downtown Ocean City",
+    "type": ["Boardwalk", "arcades", "food", "shopping", "rides"],
+    "vibe": ["lively", "classic Ocean City", "family-friendly"],
+    "best_for": ["families", "kids", "teens", "first-time visitors"],
+    "price": "Free to walk",
+    "highlights": ["arcades", "Boardwalk food", "shopping", "rides nearby", "ocean views"],
+    "genie_tip": "A flexible family recommendation because the Genie can build a Boardwalk outing around the family's budget and children's ages."
+  }
+],
     "teens": [
   {
     "name": "SpeedWorld",
