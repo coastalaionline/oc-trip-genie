@@ -72,7 +72,96 @@
     "things_to_do": [],
     "shopping": [],
     "breakfast": [],
-    "seafood": [],
+    "seafood": [
+  {
+    "name": "On the Bay Seafood",
+    "area": "42nd Street",
+    "address": "4204 Coastal Hwy, Ocean City, MD 21842",
+    "type": ["Maryland crabs", "seafood", "crab house"],
+    "vibe": ["casual", "outdoor", "beachy", "family-friendly"],
+    "best_for": ["steamed crabs", "families", "casual lunch", "classic OC experience"],
+    "price": "$$",
+    "highlights": ["steamed Maryland crabs", "crab cakes", "picnic tables", "sand-under-your-feet atmosphere"],
+    "genie_tip": "A fun choice when someone wants a casual Maryland crab experience rather than an upscale seafood dinner."
+  },
+  {
+    "name": "Higgins Crab House",
+    "area": "30th Street",
+    "address": "3102 Coastal Hwy, Ocean City, MD 21842",
+    "type": ["Maryland crabs", "seafood", "crab house"],
+    "vibe": ["casual", "traditional", "family-friendly"],
+    "best_for": ["crab feast", "families", "groups", "traditional Maryland seafood"],
+    "price": "$$",
+    "highlights": ["steamed crabs", "Eastern Shore seafood", "crab feast", "family dining"],
+    "genie_tip": "Consider Higgins when visitors specifically want the traditional sit-down Maryland crab-house experience."
+  },
+  {
+    "name": "OCM Crabs",
+    "area": "71st Street",
+    "address": "7111 Coastal Hwy, Ocean City, MD 21842",
+    "type": ["Maryland crabs", "seafood", "BBQ"],
+    "vibe": ["casual", "family-friendly"],
+    "best_for": ["all-you-can-eat crabs", "groups", "families", "crab feast"],
+    "price": "$$",
+    "highlights": ["all-you-can-eat crabs", "local corn", "cold beer", "seafood", "BBQ"],
+    "genie_tip": "A useful option when someone specifically asks for an all-you-can-eat crab experience."
+  },
+  {
+    "name": "Crab Alley",
+    "area": "West Ocean City",
+    "address": "9703 Golf Course Rd, Ocean City, MD 21842",
+    "type": ["crabs", "seafood", "waterfront"],
+    "vibe": ["casual", "waterfront", "family-friendly"],
+    "best_for": ["crab feast", "seafood lovers", "families", "groups", "water views"],
+    "price": "$$",
+    "highlights": ["steamed crabs", "seafood", "working-harbor views", "outdoor seating"],
+    "genie_tip": "A good match for visitors wanting steamed crabs with a West Ocean City harbor setting."
+  },
+  {
+    "name": "Hooper's Crab House",
+    "area": "West Ocean City",
+    "address": "12913 Ocean Gateway, Ocean City, MD 21842",
+    "type": ["crabs", "seafood", "crab house", "waterfront"],
+    "vibe": ["lively", "casual", "family-friendly", "waterfront"],
+    "best_for": ["crab feast", "groups", "families", "waterfront dining"],
+    "price": "$$$",
+    "highlights": ["steamed blue crabs", "Eastern Shore seafood", "waterfront atmosphere", "crab feasts"],
+    "genie_tip": "A classic Ocean City-area choice for visitors wanting the full crab-feast experience in a lively waterfront setting."
+  },
+  {
+    "name": "Harrison's Harbor Watch",
+    "area": "South End of Boardwalk",
+    "address": "806 S Atlantic Ave, Ocean City, MD 21842",
+    "type": ["seafood", "raw bar", "American"],
+    "vibe": ["waterfront", "upscale", "scenic"],
+    "best_for": ["seafood dinner", "date night", "sunset", "raw bar", "special occasion"],
+    "price": "$$$",
+    "highlights": ["inlet views", "raw bar", "crab cakes", "seafood", "views toward Assateague"],
+    "genie_tip": "Consider this when someone wants seafood with one of Ocean City's signature inlet views."
+  },
+  {
+    "name": "The Shark on the Harbor",
+    "area": "West Ocean City",
+    "address": "12924 Sunset Ave, Ocean City, MD 21842",
+    "type": ["seafood", "New American", "waterfront"],
+    "vibe": ["upscale-casual", "food-focused", "waterfront"],
+    "best_for": ["fresh seafood", "date night", "special dinner", "foodies"],
+    "price": "$$",
+    "highlights": ["seafood", "oysters", "seasonal preparations", "working-harbor setting"],
+    "genie_tip": "A strong option when the guest cares more about a chef-driven seafood meal than a traditional crab feast."
+  },
+  {
+    "name": "Waterman's Seafood",
+    "area": "West Ocean City",
+    "address": "12505 Ocean Gateway, Ocean City, MD 21842",
+    "type": ["seafood", "crabs", "Eastern Shore"],
+    "vibe": ["casual", "traditional", "family-friendly"],
+    "best_for": ["families", "groups", "seafood platters", "crab feast"],
+    "price": "$$$",
+    "highlights": ["seafood platters", "crabs", "Eastern Shore cooking", "family dining"],
+    "genie_tip": "A practical choice for families or groups wanting a broad traditional seafood menu."
+  }
+],
     "open_late": [],
     "free_and_budget": []
   }
