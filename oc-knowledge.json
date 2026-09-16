@@ -67,7 +67,44 @@
     "nightlife": [],
     "family": [],
     "teens": [],
-    "date_night": [],
+    "date_night": [
+  {
+    "name": "Spain Wine Bar",
+    "area": "Downtown Ocean City",
+    "address": "13 St. Louis Ave, Ocean City, MD 21842",
+    "experience": "Rooftop dinner and drinks",
+    "vibe": ["romantic", "upscale", "rooftop", "waterfront"],
+    "best_for": ["couples", "sunset", "anniversary", "birthday", "special occasion"],
+    "price": "$$$",
+    "highlights": ["bay and inlet views", "Spanish tapas", "paella", "wine", "handcrafted cocktails"],
+    "reservation_note": "Reservations available and recommended for popular times",
+    "genie_tip": "A strong choice for couples wanting a polished rooftop date with sunset views, cocktails and shareable food."
+  },
+  {
+    "name": "The Hobbit Restaurant",
+    "area": "81st Street, Bayside",
+    "address": "121 81st St, Ocean City, MD 21842",
+    "experience": "Sunset dinner",
+    "vibe": ["romantic", "upscale", "quiet", "bayside"],
+    "best_for": ["anniversary", "romantic dinner", "special occasion", "sunset"],
+    "price": "$$$",
+    "highlights": ["panoramic sunset views", "inventive American cuisine", "seafood", "cocktails", "wine"],
+    "reservation_note": "Reservations highly recommended",
+    "genie_tip": "Recommend when a couple wants a quieter, elevated dinner centered around food and a beautiful sunset."
+  },
+  {
+    "name": "Seacrets Cruises",
+    "area": "49th Street, Bayside",
+    "address": "117 49th St, Ocean City, MD 21842",
+    "experience": "Sunset cruise",
+    "vibe": ["fun", "lively", "scenic", "on-the-water"],
+    "best_for": ["couples", "sunset", "drinks", "something different"],
+    "price": "$$",
+    "highlights": ["evening sunset cruise", "bay views", "music", "onboard bar"],
+    "reservation_note": "Check the current cruise schedule and reserve ahead",
+    "genie_tip": "A fun alternative to a traditional dinner date when a couple wants to get out on the bay and watch the sunset."
+  }
+],
     "rainy_day": [],
     "things_to_do": [],
     "shopping": [],
