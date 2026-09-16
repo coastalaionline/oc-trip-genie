@@ -438,7 +438,68 @@
     "genie_tip": "Useful for guests staying uptown who want nearby shopping without traveling downtown."
   }
 ],
-    "breakfast": [],
+    "breakfast": [
+  {
+    "name": "Layton's Family Restaurant",
+    "area": "16th Street",
+    "address": "1601 Philadelphia Ave, Ocean City, MD 21842",
+    "type": ["breakfast", "American", "family restaurant"],
+    "vibe": ["casual", "classic", "family-friendly"],
+    "best_for": ["families", "kids", "early breakfast", "casual breakfast"],
+    "price": "$",
+    "highlights": ["breakfast favorites", "donuts", "pastries", "family dining"],
+    "genie_tip": "A solid classic Ocean City breakfast choice for families or visitors wanting a traditional sit-down breakfast.",
+    "current_info_note": "Verify current hours before recommending."
+  },
+  {
+    "name": "The Bayside Skillet",
+    "area": "77th Street, Bayside",
+    "address": "7701 Coastal Hwy, Ocean City, MD 21842",
+    "type": ["breakfast", "brunch", "crepes"],
+    "vibe": ["bright", "casual", "waterfront", "family-friendly"],
+    "best_for": ["couples", "families", "brunch", "water views"],
+    "price": "$$",
+    "highlights": ["crepes", "omelets", "fresh fruit", "breakfast", "bay views"],
+    "genie_tip": "Recommend when guests want a more memorable breakfast or brunch with a bayside setting.",
+    "current_info_note": "Verify current hours and seasonal schedule."
+  },
+  {
+    "name": "Barn 34",
+    "area": "34th Street",
+    "address": "3400 Coastal Hwy, Ocean City, MD 21842",
+    "type": ["breakfast", "brunch", "American"],
+    "vibe": ["casual", "modern", "relaxed"],
+    "best_for": ["couples", "families", "brunch", "groups"],
+    "price": "$$",
+    "highlights": ["breakfast", "brunch", "sweet and savory breakfast options", "cocktails"],
+    "genie_tip": "A good choice when visitors want a relaxed brunch-style breakfast rather than a traditional diner experience.",
+    "current_info_note": "Verify current breakfast hours before recommending."
+  },
+  {
+    "name": "Happy Jack Pancake House",
+    "area": "26th Street",
+    "address": "2504 Philadelphia Ave, Ocean City, MD 21842",
+    "type": ["breakfast", "pancakes", "family restaurant"],
+    "vibe": ["casual", "traditional", "family-friendly"],
+    "best_for": ["families", "kids", "pancake lovers", "classic breakfast"],
+    "price": "$",
+    "highlights": ["pancakes", "waffles", "French toast", "omelets", "traditional breakfast"],
+    "genie_tip": "Recommend when guests want a classic pancake-house breakfast with plenty of familiar options.",
+    "current_info_note": "Hours can vary seasonally. Verify before recommending."
+  },
+  {
+    "name": "Sahara Cafe",
+    "area": "19th Street",
+    "address": "1901 N Baltimore Ave, Ocean City, MD 21842",
+    "type": ["breakfast", "American", "cafe"],
+    "vibe": ["casual", "local", "family-friendly"],
+    "best_for": ["families", "couples", "casual breakfast", "traditional breakfast"],
+    "price": "$",
+    "highlights": ["breakfast", "pancakes", "omelets", "French toast", "casual dining"],
+    "genie_tip": "A useful option for visitors looking for a straightforward, casual breakfast near the Boardwalk area.",
+    "current_info_note": "Verify current operating hours before recommending."
+  }
+],
     "seafood": [
   {
     "name": "On the Bay Seafood",
