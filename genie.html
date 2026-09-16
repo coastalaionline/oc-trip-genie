@@ -372,6 +372,17 @@ Always confirm important details directly with the business.
 
 
 <script>
+    let ocKnowledge = {};
+
+fetch("oc-knowledge.json")
+  .then(response => response.json())
+  .then(data => {
+    ocKnowledge = data;
+    console.log("OC Trip Genie knowledge loaded!", ocKnowledge);
+  })
+  .catch(error => {
+    console.error("Could not load OC knowledge:", error);
+  });
 
 function addUserMessage(text) {
 
