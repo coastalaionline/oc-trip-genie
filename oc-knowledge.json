@@ -404,6 +404,68 @@
   }
 ],
     "open_late": [],
-    "free_and_budget": []
+    "free_and_budget": [
+  {
+    "name": "Ocean City Beach",
+    "area": "Oceanfront",
+    "type": ["beach", "outdoor", "free activity"],
+    "vibe": ["relaxing", "scenic", "family-friendly"],
+    "best_for": ["families", "couples", "teens", "solo travelers", "budget travelers"],
+    "price": "Free",
+    "highlights": ["10 miles of beach", "swimming", "sunrise", "walking", "ocean views"],
+    "genie_tip": "One of the easiest completely free Ocean City experiences. Suggest sunrise or an evening beach walk for visitors who want something memorable without spending money."
+  },
+  {
+    "name": "Ocean City Boardwalk",
+    "area": "Downtown Ocean City",
+    "type": ["boardwalk", "walking", "sightseeing", "free activity"],
+    "vibe": ["lively", "classic Ocean City", "family-friendly"],
+    "best_for": ["families", "couples", "teens", "first-time visitors", "budget travelers"],
+    "price": "Free to walk",
+    "highlights": ["ocean views", "people watching", "shops", "street atmosphere", "Boardwalk sights"],
+    "genie_tip": "Walking the Boardwalk costs nothing. Recommend setting a small snack or treat budget if guests want the Boardwalk experience without spending heavily."
+  },
+  {
+    "name": "Northside Park",
+    "area": "125th Street, Bayside",
+    "address": "200 125th St, Ocean City, MD 21842",
+    "type": ["park", "walking", "recreation", "free activity"],
+    "vibe": ["peaceful", "scenic", "family-friendly"],
+    "best_for": ["families", "kids", "couples", "walking", "budget travelers"],
+    "price": "Free",
+    "highlights": ["walking paths", "playgrounds", "fishing and crabbing piers", "picnic areas", "bay views"],
+    "genie_tip": "A good free alternative when visitors want a quieter experience away from the busiest parts of Ocean City."
+  },
+  {
+    "name": "Inlet Park",
+    "area": "South End of Ocean City",
+    "type": ["park", "waterfront", "sightseeing", "free activity"],
+    "vibe": ["scenic", "relaxing", "quiet"],
+    "best_for": ["couples", "families", "photos", "boat watching", "budget travelers"],
+    "price": "Free",
+    "highlights": ["inlet views", "boat watching", "views toward Assateague", "waterfront scenery"],
+    "genie_tip": "Recommend for a simple scenic stop, especially when guests are already visiting the south end of the Boardwalk."
+  },
+  {
+    "name": "Ocean City Sunrise",
+    "area": "Oceanfront",
+    "type": ["sunrise", "nature", "free activity"],
+    "vibe": ["peaceful", "romantic", "scenic"],
+    "best_for": ["couples", "photography", "solo travelers", "early risers"],
+    "price": "Free",
+    "highlights": ["Atlantic sunrise", "beach walk", "photos", "quiet morning"],
+    "genie_tip": "Recommend as a completely free romantic or peaceful experience. Pair it with an inexpensive coffee or breakfast afterward."
+  },
+  {
+    "name": "Sunset on the Bayside",
+    "area": "Bayside Ocean City",
+    "type": ["sunset", "nature", "free activity"],
+    "vibe": ["romantic", "relaxing", "scenic"],
+    "best_for": ["couples", "families", "photography", "budget date night"],
+    "price": "Free",
+    "highlights": ["bay sunset", "photos", "water views"],
+    "genie_tip": "A great foundation for a low-cost date night. Suggest watching the sunset and adding dessert, ice cream or another inexpensive treat."
+  }
+]
   }
 }
