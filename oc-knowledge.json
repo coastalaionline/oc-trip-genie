@@ -201,7 +201,63 @@
     "genie_tip": "A fun alternative to a traditional dinner date when a couple wants to get out on the bay and watch the sunset."
   }
 ],
-    "rainy_day": [],
+    "rainy_day": [
+  {
+    "name": "Ocean City Life-Saving Station Museum",
+    "area": "South End of the Boardwalk",
+    "address": "813 S Atlantic Ave, Ocean City, MD 21842",
+    "type": ["museum", "history", "indoor attraction"],
+    "vibe": ["educational", "relaxed", "family-friendly"],
+    "best_for": ["families", "kids", "couples", "history lovers", "rainy days"],
+    "price": "$",
+    "highlights": ["Ocean City history", "maritime exhibits", "aquarium room", "shipwreck exhibits"],
+    "genie_tip": "A good rainy-day choice for visitors who want an inexpensive indoor activity while learning about Ocean City's coastal history.",
+    "current_info_note": "Hours vary seasonally, so check the current museum schedule before visiting."
+  },
+  {
+    "name": "Sportland Arcade",
+    "area": "Ocean City Boardwalk",
+    "address": "506 S Atlantic Ave, Ocean City, MD 21842",
+    "type": ["arcade", "games", "indoor attraction"],
+    "vibe": ["casual", "fun", "family-friendly"],
+    "best_for": ["kids", "teens", "families", "groups", "rainy days"],
+    "price": "$-$$",
+    "highlights": ["arcade games", "Boardwalk location", "indoor entertainment"],
+    "genie_tip": "Recommend when families or teens want an easy indoor activity without leaving the Boardwalk area."
+  },
+  {
+    "name": "Fun City Arcade",
+    "area": "Caroline Street and Boardwalk",
+    "type": ["arcade", "games", "indoor attraction"],
+    "vibe": ["lively", "casual", "family-friendly"],
+    "best_for": ["kids", "teens", "families", "rainy days"],
+    "price": "$-$$",
+    "highlights": ["arcade games", "ticket games", "pinball", "claw machines", "air hockey"],
+    "genie_tip": "Another useful Boardwalk option when rain interrupts outdoor plans."
+  },
+  {
+    "name": "Museum of Ocean City",
+    "area": "Downtown Ocean City",
+    "address": "217 S Baltimore Ave, Ocean City, MD 21842",
+    "type": ["museum", "history", "indoor attraction"],
+    "vibe": ["educational", "relaxed"],
+    "best_for": ["couples", "families", "history lovers", "rainy days"],
+    "price": "$",
+    "highlights": ["Ocean City history", "local marine artifacts", "historic building", "local exhibits"],
+    "genie_tip": "Pair this with the Life-Saving Station Museum for visitors interested in local history and a longer indoor itinerary.",
+    "current_info_note": "Hours vary seasonally, so verify current hours before visiting."
+  },
+  {
+    "name": "Rainy Day Shopping",
+    "area": "Ocean City and West Ocean City",
+    "type": ["shopping", "indoor activity"],
+    "vibe": ["relaxed", "flexible"],
+    "best_for": ["couples", "families", "teens", "adults", "rainy days"],
+    "price": "$-$$$",
+    "highlights": ["local boutiques", "surf shops", "souvenir shopping", "outlet shopping"],
+    "genie_tip": "Recommend shopping when visitors want a flexible rainy-day plan that can be combined with lunch, coffee or dessert."
+  }
+],
     "things_to_do": [
   {
     "name": "Ocean City Boardwalk",
