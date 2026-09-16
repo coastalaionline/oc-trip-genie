@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ask OC Trip Genie | Ocean City, Maryland</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e8faff, #ffffff);
+    color: #073b5c;
+}
+
+nav {
+    background: white;
+    padding: 14px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,.08);
+}
+
+.brand {
+    font-weight: bold;
+    font-size: 21px;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: #073b5c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.page {
+    padding: 45px 20px;
+}
+
+.genie-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 8px 25px rgba(0,0,0,.12);
+}
+
+h1 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.chat-box {
+    background: white;
+    border-radius: 22px;
+    box-shadow: 0 10px 35px rgba(0,0,0,.10);
+    overflow: hidden;
+}
+
+.chat-header {
+    background: #087f9c;
+    color: white;
+    padding: 18px 22px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.status {
+    width: 10px;
+    height: 10px;
+    background: #75ff9b;
+    border-radius: 50%;
+}
+
+.chat-area {
+    min-height: 340px;
+    max-height: 480px;
+    overflow-y: auto;
+    padding: 25px;
+    background: #f8fdff;
+}
+
+.message {
+    max-width: 80%;
+    padding: 14px 18px;
+    margin-bottom: 15px;
+    border-radius: 18px;
+    line-height: 1.5;
+}
+
+.genie-message {
+    background: #e1f6fb;
+    border-bottom-left-radius: 5px;
+}
+
+.user-message {
+    background: #073b5c;
+    color: white;
+    margin-left: auto;
+    border-bottom-right-radius: 5px;
+}
+
+.quick-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #55707f;
+}
+
+.quick-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.quick-buttons button {
+    background: white;
+    border: 1px solid #0aa8d8;
+    color: #087f9c;
+    border-radius: 20px;
+    padding: 9px 13px;
+    cursor: pointer;
+}
+
+.quick-buttons button:hover {
+    background: #e8faff;
+}
+
+.input-area {
+    border-top: 1px solid #e5e5e5;
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    background: white;
+}
+
+input {
+    flex: 1;
+    border: 1px solid #ccdce2;
+    border-radius: 25px;
+    padding: 14px 18px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #0aa8d8;
+}
+
+.send-button {
+    border: none;
+    background: #ff8b2c;
+    color: white;
+    border-radius: 25px;
+    padding: 12px 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.disclaimer {
+    text-align: center;
+    font-size: 12px;
+    color: #687b85;
+    margin-top: 18px;
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .page {
+        padding: 30px 12px;
+    }
+
+    .logo img {
+        width: 135px;
+        height: 135px;
+    }
+
+    .message {
+        max-width: 90%;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<nav>
+
+<div class="brand">
+COASTAL AI
+</div>
+
+<a href="index.html">
+← Back to Home
+</a>
+
+</nav>
+
+
+<div class="page">
+
+<div class="genie-container">
+
+
+<div class="logo">
+
+<img
+src="OC%20Genie.png"
+alt="OC Trip Genie">
+
+</div>
+
+
+<h1>
+Ask OC Trip Genie
+</h1>
+
+<p class="subtitle">
+What are you looking for in Ocean City?
+</p>
+
+
+<div class="chat-box">
+
+
+<div class="chat-header">
+
+<div class="status"></div>
+
+<div>
+
+<strong>OC Trip Genie</strong>
+
+<br>
+
+<small>Your Ocean City digital travel companion</small>
+
+</div>
+
+</div>
+
+
+<div class="chat-area" id="chatArea">
+
+
+<div class="message genie-message">
+
+Hi! 👋 I'm OC Trip Genie. 🧞‍♀️🌊
+
+<br><br>
+
+Tell me what you're looking for in Ocean City, Maryland.
+
+<br><br>
+
+You can ask me about restaurants, nightlife, family activities,
+date nights, rainy-day ideas and things to do.
+
+</div>
+
+
+<div class="quick-title">
+Try asking:
+</div>
+
+
+<div class="quick-buttons">
+
+<button onclick="quickQuestion('Where should we eat?')">
+🦀 Where should we eat?
+</button>
+
+<button onclick="quickQuestion('What is fun to do tonight?')">
+🌙 What can we do tonight?
+</button>
+
+<button onclick="quickQuestion('What can we do with teenagers?')">
+🎡 Things to do with teens
+</button>
+
+<button onclick="quickQuestion('Where should we go for date night?')">
+💙 Date night
+</button>
+
+<button onclick="quickQuestion('What can we do if it rains?')">
+🌧️ Rainy day
+</button>
+
+<button onclick="quickQuestion('What is open late?')">
+🍹 Open late
+</button>
+
+</div>
+
+
+</div>
+
+
+<div class="input-area">
+
+<input
+type="text"
+id="userInput"
+placeholder="Ask me anything about Ocean City..."
+onkeydown="handleKey(event)"
+>
+
+<button
+class="send-button"
+onclick="sendMessage()">
+
+Send
+
+</button>
+
+</div>
+
+
+</div>
+
+
+<p class="disclaimer">
+
+OC Trip Genie recommendations are provided for trip-planning convenience.
+Hours, availability, prices and local information may change.
+Always confirm important details directly with the business.
+
+</p>
+
+
+</div>
+
+</div>
+
+
+<script>
+
+function addUserMessage(text) {
+
+    const chatArea = document.getElementById("chatArea");
+
+    const message = document.createElement("div");
+
+    message.className = "message user-message";
+
+    message.textContent = text;
+
+    chatArea.appendChild(message);
+
+    chatArea.scrollTop = chatArea.scrollHeight;
+}
+
+
+function addGenieMessage(text) {
+
+    const chatArea = document.getElementById("chatArea");
+
+    const message = document.createElement("div");
+
+    message.className = "message genie-message";
+
+    message.innerHTML = text;
+
+    chatArea.appendChild(message);
+
+    chatArea.scrollTop = chatArea.scrollHeight;
+}
+
+
+function quickQuestion(question) {
+
+    document.getElementById("userInput").value = question;
+
+    sendMessage();
+}
+
+
+function sendMessage() {
+
+    const input = document.getElementById("userInput");
+
+    const question = input.value.trim();
+
+    if (question === "") {
+        return;
+    }
+
+    addUserMessage(question);
+
+    input.value = "";
+
+    setTimeout(function() {
+
+        addGenieMessage(
+            "✨ I'm getting ready to help you explore Ocean City! " +
+            "<br><br>" +
+            "The full OC Trip Genie recommendations are coming soon. " +
+            "For now, you've successfully tested the Genie experience. 🧞‍♀️🌊"
+        );
+
+    }, 600);
+}
+
+
+function handleKey(event) {
+
+    if (event.key === "Enter") {
+        sendMessage();
+    }
+}
+
+</script>
+
+
+</body>
+
+</html>
