@@ -382,7 +382,62 @@
     "genie_tip": "A simple free stop for guests who want water views, photos or a relaxing break near the south end of the Boardwalk."
   }
 ],
-    "shopping": [],
+    "shopping": [
+  {
+    "name": "Outlets Ocean City",
+    "area": "West Ocean City",
+    "address": "12741 Ocean Gateway, Ocean City, MD 21842",
+    "type": ["outlet shopping", "clothing", "shoes", "retail"],
+    "vibe": ["casual", "family-friendly", "rainy-day-friendly"],
+    "best_for": ["adults", "families", "teens", "bargain shoppers", "rainy days"],
+    "price": "$-$$$",
+    "highlights": ["multiple brand-name stores", "clothing", "shoes", "accessories", "discount shopping"],
+    "genie_tip": "A useful option when visitors want several stores in one location or need an activity away from the beach."
+  },
+  {
+    "name": "Ocean City Boardwalk Shopping",
+    "area": "Ocean City Boardwalk",
+    "type": ["souvenirs", "beachwear", "gifts", "specialty shops"],
+    "vibe": ["lively", "casual", "classic Ocean City"],
+    "best_for": ["families", "teens", "first-time visitors", "souvenir shoppers"],
+    "price": "$-$$",
+    "highlights": ["Ocean City souvenirs", "T-shirts", "beachwear", "gifts", "specialty stores"],
+    "genie_tip": "Recommend for visitors looking for classic Ocean City souvenirs while already exploring the Boardwalk."
+  },
+  {
+    "name": "K-Coast Surf Shop",
+    "area": "35th Street",
+    "address": "3505 Coastal Hwy, Ocean City, MD 21842",
+    "type": ["surf shop", "beachwear", "swimwear", "surf gear"],
+    "vibe": ["coastal", "casual", "local"],
+    "best_for": ["teens", "surfers", "beachwear shoppers", "families"],
+    "price": "$$",
+    "highlights": ["surf apparel", "swimwear", "surfboards", "beach accessories", "coastal brands"],
+    "genie_tip": "A good recommendation when someone wants surf gear, beach clothing or a more authentic Ocean City surf-shop experience."
+  },
+  {
+    "name": "Quiet Storm Surf Shop",
+    "area": "Ocean City Boardwalk",
+    "address": "1 N Division St, Ocean City, MD 21842",
+    "type": ["surf shop", "clothing", "beachwear"],
+    "vibe": ["casual", "coastal", "Boardwalk"],
+    "best_for": ["teens", "young adults", "beachwear shoppers", "souvenirs"],
+    "price": "$$",
+    "highlights": ["surf-inspired clothing", "beachwear", "accessories", "Boardwalk location"],
+    "genie_tip": "An easy shopping stop for guests already downtown who want surf-inspired apparel or beachwear."
+  },
+  {
+    "name": "Gold Coast Mall",
+    "area": "115th Street",
+    "address": "115th St & Coastal Hwy, Ocean City, MD 21842",
+    "type": ["shopping center", "retail", "services"],
+    "vibe": ["casual", "convenient"],
+    "best_for": ["families", "adults", "uptown visitors", "rainy days"],
+    "price": "$-$$",
+    "highlights": ["shops", "restaurants", "services", "uptown location"],
+    "genie_tip": "Useful for guests staying uptown who want nearby shopping without traveling downtown."
+  }
+],
     "breakfast": [],
     "seafood": [
   {
