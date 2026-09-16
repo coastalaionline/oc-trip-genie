@@ -103,7 +103,66 @@
   }
 ],
     "family": [],
-    "teens": [],
+    "teens": [
+  {
+    "name": "SpeedWorld",
+    "area": "30th Street",
+    "address": "2901 Coastal Hwy, Ocean City, MD 21842",
+    "type": ["go-karts", "racing", "amusement"],
+    "vibe": ["high-energy", "competitive", "exciting"],
+    "best_for": ["teens", "families", "groups", "thrill seekers"],
+    "price": "$$-$$$",
+    "highlights": ["multiple go-kart tracks", "Formula 1 track", "Cyclone Cart Coaster", "racing"],
+    "seasonal": true,
+    "genie_tip": "A strong recommendation when teens want something active and competitive instead of just walking the Boardwalk.",
+    "current_info_note": "Hours and attractions are seasonal. Check current operating information before visiting."
+  },
+  {
+    "name": "Jolly Roger at the Pier",
+    "area": "South End of the Boardwalk",
+    "address": "401 S Atlantic Ave, Ocean City, MD 21842",
+    "type": ["amusement rides", "games", "Boardwalk"],
+    "vibe": ["lively", "energetic", "classic Ocean City"],
+    "best_for": ["teens", "families", "groups", "evening fun"],
+    "price": "$$-$$$",
+    "highlights": ["Giant Wheel", "thrill rides", "midway games", "Boardwalk atmosphere"],
+    "seasonal": true,
+    "genie_tip": "Recommend for teens who want rides, games and the energy of the Boardwalk, especially as part of an evening downtown.",
+    "current_info_note": "Ride availability and operating hours vary by season and weather."
+  },
+  {
+    "name": "Ocean City Boardwalk Arcades",
+    "area": "Ocean City Boardwalk",
+    "type": ["arcades", "games", "Boardwalk"],
+    "vibe": ["casual", "social", "classic beach-town fun"],
+    "best_for": ["teens", "families", "groups", "rainy periods", "evening"],
+    "price": "$-$$",
+    "highlights": ["arcade games", "Skee-Ball", "prize games", "Boardwalk food nearby"],
+    "genie_tip": "A flexible teen option that can easily be combined with Boardwalk food, shopping and rides."
+  },
+  {
+    "name": "Mini Golf",
+    "area": "Multiple Ocean City locations",
+    "type": ["mini golf", "outdoor activity", "competition"],
+    "vibe": ["casual", "fun", "social"],
+    "best_for": ["teens", "families", "couples", "groups"],
+    "price": "$-$$",
+    "highlights": ["themed courses", "friendly competition", "evening activity"],
+    "genie_tip": "A good lower-key choice for teens who want something social and competitive without spending an entire day at an amusement park."
+  },
+  {
+    "name": "Ocean City Watersports",
+    "area": "Ocean City and surrounding bays",
+    "type": ["jet skiing", "kayaking", "paddleboarding", "surfing", "water activities"],
+    "vibe": ["adventurous", "active", "outdoor"],
+    "best_for": ["active teens", "families", "adventure seekers"],
+    "price": "$$-$$$",
+    "highlights": ["jet skiing", "kayaking", "paddleboarding", "surfing"],
+    "seasonal": true,
+    "genie_tip": "Recommend for active teens looking for something more adventurous. Match the activity to age requirements, comfort level and weather conditions.",
+    "current_info_note": "Availability, age requirements, weather restrictions and seasonal schedules vary by operator."
+  }
+],
     "date_night": [
   {
     "name": "Spain Wine Bar",
