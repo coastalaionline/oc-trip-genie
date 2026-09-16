@@ -1,222 +1,794 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>OC Trip Genie | Ocean City, Maryland</title>
 
+<meta name="description" content="OC Trip Genie is your personal AI vacation guide for Ocean City, Maryland. Discover restaurants, nightlife, family activities, rainy-day fun and local favorites.">
+
 <style>
-body {
+
+* {
+    box-sizing: border-box;
     margin: 0;
-    font-family: Arial, sans-serif;
-    color: #173b4d;
-    background-color: white;
-}
-.main-logo {
-    width: 300px;
-    max-width: 80%;
-    height: auto;
-    margin-bottom: 25px;
-}
-<img src="OC%20Genie.png" alt="OC Trip Genie Logo" class="main-logo">
-    .hero {
-    min-height: 700px;
-    background: linear-gradient(#0797a6, #14546b);
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
+    padding: 0;
 }
 
-.hero h1 {
-    font-size: 65px;
-    margin-bottom: 10px;
+html {
+    scroll-behavior: smooth;
 }
 
-.hero h2 {
-    font-size: 28px;
-    font-weight: normal;
-}
-
-.hero p {
-    max-width: 650px;
-    margin: 20px auto;
-    font-size: 18px;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #073b5c;
+    background-color: #ffffff;
     line-height: 1.6;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    background: white;
+    padding: 15px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,.08);
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #073b5c;
+}
+
+.nav-links a {
+    color: #073b5c;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #0aa8d8;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 680px;
+
+    background:
+        linear-gradient(
+            rgba(0, 82, 120, .35),
+            rgba(0, 55, 90, .55)
+        ),
+        url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding: 70px 7%;
+}
+
+.hero-container {
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 45% 55%;
+    gap: 45px;
+    align-items: center;
+}
+
+
+/* LOGO */
+
+.logo-area {
+    text-align: center;
+}
+
+.main-logo {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+
+    background: rgba(255,255,255,.95);
+
+    border-radius: 50%;
+
+    padding: 5px;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,.20);
+}
+
+
+/* HERO TEXT */
+
+.hero-text {
+    color: white;
+}
+
+.hero-small {
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.hero-text h1 {
+    font-size: clamp(48px, 6vw, 82px);
+    line-height: 1;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero-text h1 span {
+    color: #36c5f0;
+}
+
+.hero-description {
+    font-size: 20px;
+    max-width: 650px;
+    margin-bottom: 30px;
 }
 
 .button {
     display: inline-block;
-    background-color: #ffd166;
-    color: #173b4d;
-    padding: 16px 30px;
-    border-radius: 30px;
+
+    background: #ff8b2c;
+    color: white;
+
+    padding: 17px 32px;
+
+    border-radius: 40px;
+
     text-decoration: none;
+
+    font-size: 18px;
+
     font-weight: bold;
-    margin-top: 20px;
+
+    box-shadow: 0 7px 20px rgba(0,0,0,.15);
+
+    transition: .2s;
 }
 
-section {
-    padding: 70px 20px;
+.button:hover {
+    transform: translateY(-2px);
+}
+
+.tagline {
+    margin-top: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+
+/* QUESTIONS */
+
+.questions {
+    background: #edfaff;
+    padding: 80px 7%;
     text-align: center;
 }
 
-.questions {
-    background-color: #eefafa;
+.questions h2 {
+    font-size: 38px;
+    margin-bottom: 5px;
+}
+
+.section-intro {
+    font-size: 19px;
+    margin-bottom: 40px;
 }
 
 .cards {
-    max-width: 900px;
-    margin: 40px auto;
+    max-width: 1150px;
+    margin: auto;
+
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
     gap: 20px;
 }
 
 .card {
     background: white;
-    padding: 25px;
-    border-radius: 15px;
+
+    min-height: 190px;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 7px 25px rgba(0,0,0,.07);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    transition: .2s;
 }
 
-.card span {
-    font-size: 35px;
+.card:hover {
+    transform: translateY(-4px);
 }
 
-.partners {
-    background-color: #173b4d;
+.card-icon {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+
+/* HOW IT WORKS */
+
+.how {
+    padding: 75px 7%;
+    text-align: center;
+    background: white;
+}
+
+.how h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.steps {
+    max-width: 900px;
+    margin: 45px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 35px;
+}
+
+.step-number {
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+    background: #08a6d5;
+
     color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: bold;
+
+    font-size: 20px;
 }
+
+
+/* PROPERTY SECTION */
+
+.property {
+    padding: 80px 7%;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(0,73,110,.92),
+            rgba(0,49,80,.95)
+        ),
+        url("https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1800&q=80");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.property h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.property p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+}
+
+.property-benefits {
+    max-width: 950px;
+
+    margin: 45px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 25px;
+}
+
+.benefit-icon {
+    font-size: 30px;
+}
+
+
+/* FOOTER */
 
 footer {
-    background-color: #0e2c3b;
+    background: #062d47;
+
     color: white;
+
+    padding: 45px 7%;
+
     text-align: center;
-    padding: 30px;
 }
 
-@media (max-width: 600px) {
-    .hero h1 {
-        font-size: 42px;
-    }
+footer h3 {
+    font-size: 24px;
+    letter-spacing: 2px;
 }
+
+footer p {
+    margin-top: 5px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 850px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        padding: 55px 6%;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .main-logo {
+        max-width: 330px;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .property-benefits {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
 </style>
 
 </head>
 
+
 <body>
 
-<div class="hero">
 
-<p>COASTAL AI PRESENTS</p>
+<!-- NAVIGATION -->
 
-<h1>OC TRIP GENIE</h1>
+<nav>
 
-<h2>Your Ocean City vacation, one question away.</h2>
+<div class="brand">
+COASTAL AI
+</div>
 
-<p>
-Your digital guide to Ocean City, Maryland.
-Discover where to eat, what to do, nightlife,
-family fun, rainy-day activities and local favorites.
-</p>
+<div class="nav-links">
 
-<a class="button" href="#ask">
-✨ ASK THE GENIE
-</a>
+<a href="#home">HOME</a>
+
+<a href="#ask">ASK THE GENIE</a>
+
+<a href="#explore">EXPLORE OC</a>
+
+<a href="#properties">FOR PROPERTIES</a>
+
+</div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<header class="hero" id="home">
+
+<div class="hero-container">
+
+
+<div class="logo-area">
+
+<img
+src="OC%20Genie.png"
+alt="OC Trip Genie Logo"
+class="main-logo"
+>
 
 </div>
 
 
+<div class="hero-text">
+
+<p class="hero-small">
+Your Ocean City Vacation
+</p>
+
+<h1>
+ONE QUESTION
+<span>AWAY.</span>
+</h1>
+
+<p class="hero-description">
+
+Discover where to eat, what to do, nightlife,
+family fun, rainy-day activities and local favorites —
+all in one place.
+
+</p>
+
+<a class="button" href="#ask">
+
+✨ ASK THE GENIE
+
+</a>
+
+<p class="tagline">
+EXPLORE • PLAN • ENJOY
+</p>
+
+</div>
+
+</div>
+
+</header>
+
+
+<!-- QUESTIONS -->
+
 <section class="questions" id="ask">
 
-<h2>What do you want to do in OC?</h2>
+<h2>
+What do you want to do in OC?
+</h2>
+
+<p class="section-intro">
+
+Spend less time searching and more time enjoying Ocean City.
+
+</p>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<div class="card-icon">
+🦀
+</div>
+
+<h3>Eat</h3>
+
+<p>
+Where can we get great crabs tonight?
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">
+🍹
+</div>
+
+<h3>Go Out</h3>
+
+<p>
+What's open late tonight?
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">
+🎡
+</div>
+
+<h3>Have Fun</h3>
+
+<p>
+What's something fun to do with teenagers?
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">
+🌧️
+</div>
+
+<h3>Rainy Day</h3>
+
+<p>
+What can we do if it rains?
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">
+💙
+</div>
+
+<h3>Date Night</h3>
+
+<p>
+Where should we go for date night?
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">
+🌊
+</div>
+
+<h3>Explore</h3>
+
+<p>
+What shouldn't we miss while we're in OC?
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- HOW IT WORKS -->
+
+<section class="how" id="explore">
+
+<h2>
+Ocean City Made Easy
+</h2>
+
+<p class="section-intro">
+
+Ask the Genie. Get ideas. Enjoy your trip.
+
+</p>
+
+
+<div class="steps">
+
+
+<div>
+
+<div class="step-number">
+1
+</div>
+
+<h3>Ask</h3>
+
+<p>
+Tell OC Trip Genie what you're looking for.
+</p>
+
+</div>
+
+
+<div>
+
+<div class="step-number">
+2
+</div>
+
+<h3>Discover</h3>
+
+<p>
+Get helpful Ocean City suggestions based on what you want to do.
+</p>
+
+</div>
+
+
+<div>
+
+<div class="step-number">
+3
+</div>
+
+<h3>Enjoy</h3>
 
 <p>
 Spend less time searching and more time enjoying Ocean City.
 </p>
 
-<div class="cards">
-
-<div class="card">
-<span>🦀</span>
-<h3>Eat</h3>
-<p>Where can we get great crabs tonight?</p>
 </div>
 
-<div class="card">
-<span>🍹</span>
-<h3>Go Out</h3>
-<p>What's open late tonight?</p>
-</div>
-
-<div class="card">
-<span>🎡</span>
-<h3>Have Fun</h3>
-<p>What's something fun to do with teenagers?</p>
-</div>
-
-<div class="card">
-<span>🌧️</span>
-<h3>Rainy Day</h3>
-<p>What can we do if it rains?</p>
-</div>
-
-<div class="card">
-<span>💙</span>
-<h3>Date Night</h3>
-<p>Where should we go for date night?</p>
-</div>
-
-<div class="card">
-<span>🌊</span>
-<h3>Explore</h3>
-<p>What shouldn't we miss while we're in OC?</p>
-</div>
 
 </div>
 
 </section>
 
 
-<section>
+<!-- PROPERTY OWNERS -->
 
-<h2>Ocean City Made Easy</h2>
+<section class="property" id="properties">
 
-<p>
-Ask OC Trip Genie what you're looking for,
-get helpful suggestions, and get back to enjoying your vacation.
-</p>
-
-</section>
-
-
-<section class="partners">
-
-<h2>Own or Manage a Vacation Property?</h2>
+<h2>
+Own or Manage a Vacation Property?
+</h2>
 
 <p>
+
 Give your guests a smarter way to experience Ocean City.
 Coastal AI is developing digital concierge experiences
 for vacation rentals, property managers and hospitality businesses.
+
 </p>
 
-<a class="button" href="mailto:hello@coastalai.online">
+
+<a
+class="button"
+href="mailto:hello@coastalai.online"
+>
+
 Become a Founding Property
+
 </a>
+
+
+<div class="property-benefits">
+
+
+<div>
+
+<div class="benefit-icon">
+👥
+</div>
+
+<p>
+Enhance the guest experience
+</p>
+
+</div>
+
+
+<div>
+
+<div class="benefit-icon">
+📈
+</div>
+
+<p>
+Stand out from the competition
+</p>
+
+</div>
+
+
+<div>
+
+<div class="benefit-icon">
+⭐
+</div>
+
+<p>
+Support local businesses
+</p>
+
+</div>
+
+
+<div>
+
+<div class="benefit-icon">
+♡
+</div>
+
+<p>
+Encourage repeat stays
+</p>
+
+</div>
+
+
+</div>
 
 </section>
 
 
+<!-- FOOTER -->
+
 <footer>
 
-<h3>OC TRIP GENIE</h3>
+<h3>
+COASTAL AI
+</h3>
 
-<p>Powered by Coastal AI</p>
+<p>
+Travel smarter. Experience more.
+</p>
 
-<p>Ocean City, Maryland</p>
+<br>
+
+<strong>
+OC TRIP GENIE
+</strong>
+
+<p>
+Your Personal AI Vacation Planner
+</p>
+
+<p>
+Ocean City, Maryland
+</p>
 
 </footer>
 
+
 </body>
+
 </html>
-```
