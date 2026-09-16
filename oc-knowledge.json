@@ -3,7 +3,67 @@
   "brand": "OC Trip Genie",
   "tagline": "Your Ocean City vacation, one question away.",
   "categories": {
-    "food": [],
+    "food": [
+  {
+    "name": "Fish Tales Bar & Grill",
+    "area": "22nd Street, Bayside",
+    "address": "2107 Herring Way, Ocean City, MD 21842",
+    "type": ["seafood", "American", "waterfront"],
+    "vibe": ["casual", "lively", "family-friendly", "waterfront"],
+    "best_for": ["families", "kids", "groups", "sunset", "drinks"],
+    "price": "$$",
+    "highlights": ["bay views", "large kids playground", "seafood", "cocktails", "outdoor dining"],
+    "reservation_note": "First come, first served",
+    "genie_tip": "A strong choice for families who want waterfront dining while the kids have something fun to do."
+  },
+  {
+    "name": "Layton's Family Restaurant",
+    "area": "16th Street",
+    "address": "1601 Philadelphia Ave, Ocean City, MD 21842",
+    "type": ["breakfast", "American", "family restaurant"],
+    "vibe": ["casual", "traditional", "family-friendly"],
+    "best_for": ["breakfast", "families", "kids", "early risers", "budget-conscious travelers"],
+    "price": "$",
+    "highlights": ["breakfast", "donuts", "pastries", "classic breakfast dishes"],
+    "genie_tip": "A good casual breakfast stop before heading to the beach."
+  },
+  {
+    "name": "The Shark on the Harbor",
+    "area": "West Ocean City",
+    "address": "12924 Sunset Ave, Ocean City, MD 21842",
+    "type": ["seafood", "American", "waterfront"],
+    "vibe": ["upscale-casual", "coastal", "waterfront"],
+    "best_for": ["seafood lovers", "date night", "special dinner", "sunset"],
+    "price": "$$",
+    "highlights": ["local seafood", "fresh ingredients", "harbor views", "changing menu"],
+    "reservation_note": "Reservations suggested; call for same-day availability",
+    "genie_tip": "Consider this for travelers looking for a more food-focused seafood dinner overlooking the harbor."
+  },
+  {
+    "name": "Spain Wine Bar",
+    "area": "Downtown Ocean City",
+    "address": "13 St. Louis Ave, Ocean City, MD 21842",
+    "type": ["Spanish", "tapas", "rooftop", "wine bar"],
+    "vibe": ["upscale", "romantic", "lively", "rooftop"],
+    "best_for": ["date night", "couples", "birthdays", "celebrations", "sunset", "brunch"],
+    "price": "$$$",
+    "highlights": ["rooftop bay views", "Spanish tapas", "paella", "wine", "cocktails"],
+    "reservation_note": "Reservations available and recommended for popular times",
+    "genie_tip": "A strong date-night option when someone wants rooftop views, cocktails and shareable food."
+  },
+  {
+    "name": "The Hobbit Restaurant",
+    "area": "81st Street, Bayside",
+    "address": "121 81st St, Ocean City, MD 21842",
+    "type": ["American", "seafood", "fine dining"],
+    "vibe": ["upscale", "romantic", "bayside"],
+    "best_for": ["date night", "anniversary", "birthday", "special occasion", "sunset"],
+    "price": "$$$",
+    "highlights": ["panoramic sunset views", "seafood", "American cuisine", "cocktails"],
+    "reservation_note": "Reservations highly recommended",
+    "genie_tip": "A good match for couples wanting a more elevated dinner and sunset experience."
+ },
+  }
     "nightlife": [],
     "family": [],
     "teens": [],
