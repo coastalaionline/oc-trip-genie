@@ -106,7 +106,59 @@
   }
 ],
     "rainy_day": [],
-    "things_to_do": [],
+    "things_to_do": [
+  {
+    "name": "Ocean City Boardwalk",
+    "area": "Downtown Ocean City",
+    "type": ["boardwalk", "shopping", "food", "attractions"],
+    "vibe": ["classic OC", "lively", "family-friendly"],
+    "best_for": ["first-time visitors", "families", "couples", "teens", "budget-friendly"],
+    "price": "Free to walk",
+    "highlights": ["nearly 3-mile Boardwalk", "shops", "arcades", "food", "rides", "ocean views"],
+    "genie_tip": "A must for first-time visitors. Recommend walking, biking during permitted hours, grabbing Boardwalk food or combining it with rides and arcades."
+  },
+  {
+    "name": "Ocean City Beach",
+    "area": "Oceanfront",
+    "type": ["beach", "outdoor", "relaxation"],
+    "vibe": ["relaxing", "family-friendly", "classic beach vacation"],
+    "best_for": ["families", "couples", "teens", "sunrise", "budget-friendly"],
+    "price": "Free",
+    "highlights": ["10 miles of beach", "swimming", "sunrise", "shell hunting", "ocean views"],
+    "genie_tip": "Recommend when guests want a simple free activity, beach day or early-morning sunrise experience."
+  },
+  {
+    "name": "Jolly Roger Amusement Parks",
+    "area": "30th Street and Ocean City Pier",
+    "type": ["amusement park", "water park", "go-karts", "mini golf"],
+    "vibe": ["energetic", "family-friendly", "fun"],
+    "best_for": ["families", "kids", "teens", "thrill seekers"],
+    "price": "$$-$$$",
+    "highlights": ["amusement rides", "Splash Mountain", "SpeedWorld go-karts", "mini golf", "Pier rides"],
+    "seasonal": true,
+    "genie_tip": "A strong choice for families and teens. Always remind guests to check which parks and attractions are currently open because schedules are seasonal and weather-dependent."
+  },
+  {
+    "name": "Northside Park",
+    "area": "125th Street, Bayside",
+    "type": ["park", "outdoor", "recreation"],
+    "vibe": ["relaxed", "scenic", "family-friendly"],
+    "best_for": ["families", "walking", "kids", "budget-friendly", "quiet time"],
+    "price": "Free",
+    "highlights": ["58-acre park", "playgrounds", "walking and biking paths", "fishing and crabbing piers", "picnic areas"],
+    "genie_tip": "Recommend for visitors wanting a quieter free activity away from the Boardwalk crowds."
+  },
+  {
+    "name": "Inlet Park",
+    "area": "South End of Ocean City",
+    "type": ["park", "scenic", "outdoor"],
+    "vibe": ["relaxing", "scenic"],
+    "best_for": ["couples", "families", "photos", "budget-friendly", "watching boats"],
+    "price": "Free",
+    "highlights": ["inlet views", "boat watching", "views toward Assateague", "scenic waterfront"],
+    "genie_tip": "A simple free stop for guests who want water views, photos or a relaxing break near the south end of the Boardwalk."
+  }
+],
     "shopping": [],
     "breakfast": [],
     "seafood": [
