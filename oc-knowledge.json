@@ -64,7 +64,44 @@
     "genie_tip": "A good match for couples wanting a more elevated dinner and sunset experience."
  },
   }
-    "nightlife": [],
+    "nightlife": [
+  {
+    "name": "Seacrets",
+    "area": "49th Street, Bayside",
+    "address": "117 49th St, Ocean City, MD 21842",
+    "type": ["nightclub", "live music", "DJ", "bars", "waterfront"],
+    "vibe": ["high-energy", "tropical", "dancing", "large party venue"],
+    "best_for": ["dancing", "groups", "live music", "DJs", "late night"],
+    "price": "$$-$$$",
+    "highlights": ["multiple entertainment areas", "Morley Hall Nite Club", "live bands", "DJs", "bayfront atmosphere"],
+    "genie_tip": "Recommend when adults want one of Ocean City's biggest nightlife experiences with dancing, DJs and live entertainment.",
+    "current_info_note": "Entertainment schedules, cover charges and seasonal operations can change. Check the current calendar before recommending a specific event."
+  },
+  {
+    "name": "Fager's Island",
+    "area": "60th Street, Bayside",
+    "address": "201 60th St, Ocean City, MD 21842",
+    "type": ["nightclub", "live music", "DJ", "waterfront", "restaurant"],
+    "vibe": ["lively", "waterfront", "social", "sunset-to-nightlife"],
+    "best_for": ["couples", "groups", "live music", "DJs", "sunset drinks", "dancing"],
+    "price": "$$-$$$",
+    "highlights": ["live bands", "DJs", "nightclub", "bayside setting", "deck entertainment"],
+    "genie_tip": "A strong option for visitors who want to start with sunset drinks or dinner and transition into live music and nightlife.",
+    "current_info_note": "Entertainment and special-event schedules change, so verify the current calendar."
+  },
+  {
+    "name": "Purple Moose Saloon",
+    "area": "Ocean City Boardwalk",
+    "address": "Between Talbot and Caroline Streets on the Boardwalk, Ocean City, MD",
+    "type": ["rock bar", "nightclub", "live music"],
+    "vibe": ["energetic", "casual", "rock-and-roll", "late-night"],
+    "best_for": ["live rock music", "Boardwalk nightlife", "groups", "late night"],
+    "price": "$$",
+    "highlights": ["live rock bands", "DJs", "Boardwalk location", "late-night atmosphere"],
+    "genie_tip": "Recommend when someone specifically wants live rock music or nightlife directly on the Boardwalk.",
+    "current_info_note": "Band schedules and operating hours vary by date and season. Check the current calendar."
+  }
+],
     "family": [],
     "teens": [],
     "date_night": [
