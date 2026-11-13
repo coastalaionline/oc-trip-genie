@@ -268,7 +268,9 @@ h1 {
 
   <!-- ASK GENIE -->
 
-  <form class="ask-box" id="askForm">
+  
+<form class="ask-box" id="askForm" onsubmit="event.preventDefault(); sendMessage(); return false;">
+
 
     <input
       type="text"
