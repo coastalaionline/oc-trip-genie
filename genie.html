@@ -519,16 +519,7 @@ function sendMessage() {
   addMessage(reply, "genie");
 }
 
-  let reply = "✨ Here are some Ocean City recommendations:\n\n";
-
-  places.slice(0, 3).forEach(place => {
-    reply += "📍 " + place.name + "\n";
-    reply += (place.area || "") + "\n";
-    reply += (place.genie_tip || "") + "\n\n";
-  });
-
-  addGenieMessage(reply);
-}
+  let reply = "✨ Here are some Ocean City recommendations:\n\n"
 
 /* QUICK QUESTIONS */
 
