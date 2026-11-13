@@ -405,18 +405,161 @@ function addMessage(text, type) {
 
 /* ASK GENIE */
 
-function sendMessage() {
 
+function sendMessage() {
   const question = userInput.value.trim();
 
   if (!question) return;
 
+  // Show the visitor's question
   addMessage(question, "user");
 
   userInput.value = "";
 
-  // Temporary response until AI concierge is connected
+  // Read the question
+  const q = question.toLowerCase();
 
+  // Access Ocean City's knowledge base
+  const categories = ocKnowledge.categories || {};
+
+  let category = "";
+
+  // Find the right category
+  if (/crab|seafood|shrimp|oyster/.test(q)) {
+    category = "seafood";
+
+  } else if (/breakfast|brunch|pancake/.test(q)) {
+    category = "breakfast";
+
+  } else if (/rain|indoor/.test(q)) {
+    category = "rainy_day";
+
+  } else if (/date|romantic|anniversary/.test(q)) {
+    category = "date_night";
+
+  } else if (/nightlife|club|bar|music|dance/.test(q)) {
+    category = "nightlife";
+
+  } else if (/teen|arcade|go.kart/.test(q)) {
+    category = "teens";
+
+  } else if (/shop|store|outlet|souvenir/.test(q)) {
+    category = "shopping";
+
+  } else if (/free|cheap|budget/.test(q)) {
+    category = "free_and_budget";
+
+  } else if (/family|kid|child/.test(q)) {
+    category = "family";
+
+  } else if (/late|tonight/.test(q)) {
+    category = "open_late";
+
+  } else if (/food|eat|restaurant|dinner|lunch/.test(q)) {
+    category = "food";
+
+  } else if (/activity|attraction|fun|boardwalk|beach/.test(q)) {
+    category = "things_to_do";
+  }
+
+  // Check if the knowledge base has loaded
+  if (!Object.keys(categories).length) {
+    addMessage(
+      "I'm having trouble loading my Ocean City recommendations. Please refresh the page and try again.",
+      "genie"
+    );
+    return;
+  }
+
+  // Find recommendations
+  const places = categories[category];
+
+  if (!places || !places.length) {
+    addMessage(
+      "✨ I can help you discover Ocean City! " +
+      "Try asking about seafood, breakfast, " +
+      "restaurants, nightlife, shopping, " +
+      "family activities, or things to do.",
+      "genie"
+    );
+    return;
+  }
+
+  // Build the response
+  let reply = "✨ Here are some Ocean City recommendations:\n\n";
+
+  places.slice(0, 3).forEach(place => {
+
+    reply += "📍 " + place.name + "\n";
+
+    if (place.area) {
+      reply += "Location: " + place.area + "\n";
+    }
+
+    if (place.price) {
+      reply += "Price: " + place.price + "\n";
+    }
+
+    if (place.genie_tip) {
+      reply += "💡 " + place.genie_tip + "\n";
+    }
+
+    if (place.address) {
+      reply += "Address: " + place.address + "\n";
+    }
+
+    reply += "\n";
+  });
+
+  reply += "🌊 Hours and availability may change. Please confirm details before visiting.";
+
+  // Display Genie's answer
+  addMessage(reply, "genie");
+}
+  
+  if (/crab|seafood|shrimp|oyster/.test(q)) {
+    category = "seafood";
+  } else if (/breakfast|brunch|pancake/.test(q)) {
+    category = "breakfast";
+  } else if (/rain|indoor/.test(q)) {
+    category = "rainy_day";
+  } else if (/date|romantic|anniversary/.test(q)) {
+    category = "date_night";
+  } else if (/nightlife|club|bar|music|dance/.test(q)) {
+    category = "nightlife";
+  } else if (/teen|arcade|go.kart/.test(q)) {
+    category = "teens";
+  } else if (/shop|store|outlet/.test(q)) {
+    category = "shopping";
+  } else if (/free|cheap|budget/.test(q)) {
+    category = "free_and_budget";
+  } else if (/family|kid|child/.test(q)) {
+    category = "family";
+  } else if (/late|tonight/.test(q)) {
+    category = "open_late";
+  } else if (/food|eat|restaurant|dinner|lunch/.test(q)) {
+    category = "food";
+  }
+
+  const places = categories[category];
+
+  if (!places || !places.length) {
+    addGenieMessage(
+      "I'm still loading my Ocean City recommendations. " +
+      "Please try again in a moment."
+    );
+    return;
+  }
+
+  let reply = "✨ Here are some Ocean City recommendations:\n\n";
+
+  places.slice(0, 3).forEach(place => {
+    reply += "📍 " + place.name + "\n";
+    reply += (place.area || "") + "\n";
+    reply += (place.genie_tip || "") + "\n\n";
+  });
+
+  addGenieMessage(reply);
 }
 
 /* QUICK QUESTIONS */
