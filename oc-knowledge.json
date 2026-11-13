@@ -1,142 +1,432 @@
 
-<script>
-let knowledge = {};
-
-fetch("oc-knowledge.json")
-  .then(response => {
-    if (!response.ok) throw new Error("File not found");
-    return response.json();
-  })
-  .then(data => {
-    knowledge = data.categories;
-    console.log("OC Genie is ready!");
-  })
-  .catch(error => {
-    console.error("Knowledge error:", error);
-  });
-
-const input = document.getElementById("userInput");
-const chatArea = document.getElementById("chatArea");
-const conversation = document.getElementById("conversation");
-
-function addMessage(text, type) {
-  conversation.classList.add("active");
-
-  const message = document.createElement("div");
-  message.className = "message " + type;
-  message.textContent = text;
-
-  chatArea.appendChild(message);
-  return message;
-}
-
-function sendMessage() {
-  const question = input.value.trim();
-  if (!question) return;
-
-  addMessage(question, "user-message");
-  input.value = "";
-
-  const q = question.toLowerCase();
-  let category = "";
-
-  if (/crab|seafood|oyster|shrimp/.test(q))
-    category = "seafood";
-  else if (/breakfast|brunch|pancake/.test(q))
-    category = "breakfast";
-  else if (/rain|indoor/.test(q))
-    category = "rainy_day";
-  else if (/date|romantic|anniversary/.test(q))
-    category = "date_night";
-  else if (/nightlife|club|bar|music|dance/.test(q))
-    category = "nightlife";
-  else if (/teen|arcade|go.kart/.test(q))
-    category = "teens";
-  else if (/shop|store|outlet|souvenir/.test(q))
-    category = "shopping";
-  else if (/free|cheap|budget/.test(q))
-    category = "free_and_budget";
-  else if (/family|kid|child/.test(q))
-    category = "family";
-  else if (/late|tonight/.test(q))
-    category = "open_late";
-  else if (/food|eat|restaurant|dinner|lunch/.test(q))
-    category = "food";
-  else if (/activity|attraction|fun|boardwalk|beach/.test(q))
-    category = "things_to_do";
-
-  if (!category) {
-    const all = Object.entries(knowledge);
-    const found = all.find(([key, places]) =>
-      Array.isArray(places) &&
-      places.some(place =>
-        place.name.toLowerCase().includes(q)
-      )
-    );
-    if (found) category = found[0];
+{
+  "destination": "Ocean City, Maryland",
+  "brand": "OC Trip Genie",
+  "tagline": "Your Ocean City Digital Concierge",
+  "categories": {
+    "food": [
+      {
+        "name": "Fish Tales Bar & Grill",
+        "area": "22nd Street, Bayside",
+        "address": "2107 Herring Way, Ocean City, MD 21842",
+        "price": "$$",
+        "genie_tip": "A lively waterfront restaurant with seafood, bay views, outdoor dining and a playground for children."
+      },
+      {
+        "name": "Layton's Family Restaurant",
+        "area": "16th Street",
+        "address": "1601 Philadelphia Ave, Ocean City, MD 21842",
+        "price": "$",
+        "genie_tip": "A casual family restaurant serving breakfast favorites, donuts and pastries."
+      },
+      {
+        "name": "The Shark on the Harbor",
+        "area": "West Ocean City",
+        "address": "12924 Sunset Ave, Ocean City, MD 21842",
+        "price": "$$",
+        "genie_tip": "A seafood-focused restaurant with fresh ingredients, changing menus and harbor views."
+      },
+      {
+        "name": "Spain Wine Bar",
+        "area": "Downtown Ocean City",
+        "address": "13 St. Louis Ave, Ocean City, MD 21842",
+        "price": "$$$",
+        "genie_tip": "A rooftop dining experience with Spanish tapas, paella, cocktails and scenic views."
+      },
+      {
+        "name": "The Hobbit Restaurant",
+        "area": "81st Street, Bayside",
+        "address": "121 81st St, Ocean City, MD 21842",
+        "price": "$$$",
+        "genie_tip": "An upscale restaurant known for panoramic sunset views, seafood and special-occasion dining."
+      }
+    ],
+    "seafood": [
+      {
+        "name": "On the Bay Seafood",
+        "area": "42nd Street",
+        "address": "4204 Coastal Hwy, Ocean City, MD 21842",
+        "price": "$$",
+        "genie_tip": "Enjoy steamed Maryland crabs, crab cakes and casual outdoor dining."
+      },
+      {
+        "name": "Higgins Crab House",
+        "area": "30th Street",
+        "address": "3102 Coastal Hwy, Ocean City, MD 21842",
+        "price": "$$",
+        "genie_tip": "A traditional Maryland crab house serving steamed crabs and Eastern Shore seafood."
+      },
+      {
+        "name": "OCM Crabs",
+        "area": "71st Street",
+        "address": "7111 Coastal Hwy, Ocean City, MD 21842",
+        "price": "$$",
+        "genie_tip": "A casual option for crab feasts, seafood and BBQ. Ask about current all-you-can-eat offerings."
+      },
+      {
+        "name": "Crab Alley",
+        "area": "West Ocean City",
+        "address": "9703 Golf Course Rd, Ocean City, MD 21842",
+        "price": "$$",
+        "genie_tip": "Enjoy steamed crabs and seafood in a waterfront harbor setting."
+      },
+      {
+        "name": "Hooper's Crab House",
+        "area": "West Ocean City",
+        "address": "12913 Ocean Gateway, Ocean City, MD 21842",
+        "price": "$$$",
+        "genie_tip": "A lively crab house offering Maryland blue crabs and traditional Eastern Shore seafood."
+      },
+      {
+        "name": "Harrison's Harbor Watch",
+        "area": "South End of Boardwalk",
+        "address": "806 S Atlantic Ave, Ocean City, MD 21842",
+        "price": "$$$",
+        "genie_tip": "Seafood dining with inlet views, crab cakes and a raw bar."
+      },
+      {
+        "name": "The Shark on the Harbor",
+        "area": "West Ocean City",
+        "address": "12924 Sunset Ave, Ocean City, MD 21842",
+        "price": "$$",
+        "genie_tip": "A great choice for guests seeking fresh seafood and a chef-driven dining experience."
+      },
+      {
+        "name": "Waterman's Seafood",
+        "area": "West Ocean City",
+        "address": "12505 Ocean Gateway, Ocean City, MD 21842",
+        "price": "$$$",
+        "genie_tip": "A traditional seafood restaurant serving crab feasts and Eastern Shore favorites."
+      }
+    ],
+    "breakfast": [
+      {
+        "name": "Layton's Family Restaurant",
+        "area": "16th Street",
+        "address": "1601 Philadelphia Ave, Ocean City, MD 21842",
+        "price": "$",
+        "genie_tip": "A classic breakfast restaurant with donuts, pastries and traditional breakfast dishes."
+      },
+      {
+        "name": "The Bayside Skillet",
+        "area": "77th Street, Bayside",
+        "address": "7701 Coastal Hwy, Ocean City, MD 21842",
+        "price": "$$",
+        "genie_tip": "A breakfast and brunch destination known for crepes, omelets, fruit and bay views."
+      },
+      {
+        "name": "Barn 34",
+        "area": "34th Street",
+        "address": "3400 Coastal Hwy, Ocean City, MD 21842",
+        "price": "$$",
+        "genie_tip": "A relaxed breakfast and brunch restaurant with sweet and savory options."
+      },
+      {
+        "name": "Happy Jack Pancake House",
+        "area": "26th Street",
+        "address": "2504 Philadelphia Ave, Ocean City, MD 21842",
+        "price": "$",
+        "genie_tip": "A family-friendly breakfast spot serving pancakes, waffles, French toast and omelets."
+      },
+      {
+        "name": "Sahara Cafe",
+        "area": "19th Street",
+        "address": "1901 N Baltimore Ave, Ocean City, MD 21842",
+        "price": "$",
+        "genie_tip": "A casual cafe serving traditional breakfast favorites."
+      }
+    ],
+    "nightlife": [
+      {
+        "name": "Seacrets",
+        "area": "49th Street, Bayside",
+        "address": "117 49th St, Ocean City, MD 21842",
+        "price": "$$-$$$",
+        "genie_tip": "A major Ocean City nightlife destination with dancing, DJs, live bands and multiple entertainment areas."
+      },
+      {
+        "name": "Fager's Island",
+        "area": "60th Street, Bayside",
+        "address": "201 60th St, Ocean City, MD 21842",
+        "price": "$$-$$$",
+        "genie_tip": "Enjoy waterfront drinks, sunsets, live music and nightlife."
+      },
+      {
+        "name": "Purple Moose Saloon",
+        "area": "Ocean City Boardwalk",
+        "address": "Between Talbot and Caroline Streets, Ocean City, MD",
+        "price": "$$",
+        "genie_tip": "A lively Boardwalk bar featuring rock music, live bands and DJs."
+      }
+    ],
+    "family": [
+      {
+        "name": "Jolly Roger Amusement Park",
+        "area": "30th Street",
+        "address": "2901 Coastal Hwy, Ocean City, MD 21842",
+        "price": "$$-$$$",
+        "genie_tip": "A family amusement destination with rides and nearby entertainment. Seasonal schedules apply."
+      },
+      {
+        "name": "Splash Mountain Water Park",
+        "area": "30th Street",
+        "address": "2901 Coastal Hwy, Ocean City, MD 21842",
+        "price": "$$-$$$",
+        "genie_tip": "A seasonal water park with slides, a lazy river and family water attractions."
+      },
+      {
+        "name": "Trimper Rides",
+        "area": "South End of Boardwalk",
+        "address": "700 S Atlantic Ave, Ocean City, MD 21842",
+        "price": "$$",
+        "genie_tip": "Historic amusement rides, family attractions and Boardwalk entertainment."
+      },
+      {
+        "name": "Northside Park",
+        "area": "125th Street, Bayside",
+        "address": "200 125th St, Ocean City, MD 21842",
+        "price": "Free",
+        "genie_tip": "A spacious park with playgrounds, walking paths, picnic areas and fishing piers."
+      },
+      {
+        "name": "Ocean City Beach",
+        "area": "Oceanfront",
+        "price": "Free",
+        "genie_tip": "Enjoy swimming, sandcastles, beach games and ocean views."
+      },
+      {
+        "name": "Ocean City Boardwalk",
+        "area": "Downtown Ocean City",
+        "price": "Free to walk",
+        "genie_tip": "Explore arcades, Boardwalk food, shops, rides and oceanfront entertainment."
+      }
+    ],
+    "teens": [
+      {
+        "name": "SpeedWorld",
+        "area": "30th Street",
+        "address": "2901 Coastal Hwy, Ocean City, MD 21842",
+        "price": "$$-$$$",
+        "genie_tip": "An exciting go-kart racing attraction for teens and families. Check seasonal availability."
+      },
+      {
+        "name": "Jolly Roger at the Pier",
+        "area": "South End of Boardwalk",
+        "address": "401 S Atlantic Ave, Ocean City, MD 21842",
+        "price": "$$-$$$",
+        "genie_tip": "Enjoy thrill rides, midway games and the Giant Wheel."
+      },
+      {
+        "name": "Ocean City Boardwalk Arcades",
+        "area": "Ocean City Boardwalk",
+        "price": "$-$$",
+        "genie_tip": "Classic arcade games, Skee-Ball, prize games and social entertainment."
+      },
+      {
+        "name": "Mini Golf",
+        "area": "Multiple Ocean City locations",
+        "price": "$-$$",
+        "genie_tip": "Themed mini-golf courses offer friendly competition for teens and groups."
+      },
+      {
+        "name": "Ocean City Watersports",
+        "area": "Ocean City and surrounding bays",
+        "price": "$$-$$$",
+        "genie_tip": "Explore jet skiing, kayaking, paddleboarding and surfing. Age restrictions and seasonal availability vary."
+      }
+    ],
+    "date_night": [
+      {
+        "name": "Spain Wine Bar",
+        "area": "Downtown Ocean City",
+        "address": "13 St. Louis Ave, Ocean City, MD 21842",
+        "price": "$$$",
+        "genie_tip": "Enjoy a romantic rooftop dinner with Spanish tapas, cocktails and sunset views."
+      },
+      {
+        "name": "The Hobbit Restaurant",
+        "area": "81st Street, Bayside",
+        "address": "121 81st St, Ocean City, MD 21842",
+        "price": "$$$",
+        "genie_tip": "An upscale romantic dinner destination with panoramic sunset views."
+      },
+      {
+        "name": "Seacrets Cruises",
+        "area": "49th Street, Bayside",
+        "address": "117 49th St, Ocean City, MD 21842",
+        "price": "$$",
+        "genie_tip": "A sunset cruise experience with bay views and music. Check current cruise schedules."
+      }
+    ],
+    "rainy_day": [
+      {
+        "name": "Ocean City Life-Saving Station Museum",
+        "area": "South End of Boardwalk",
+        "address": "813 S Atlantic Ave, Ocean City, MD 21842",
+        "price": "$",
+        "genie_tip": "Explore maritime history, shipwreck exhibits and Ocean City heritage."
+      },
+      {
+        "name": "Sportland Arcade",
+        "area": "Ocean City Boardwalk",
+        "address": "506 S Atlantic Ave, Ocean City, MD 21842",
+        "price": "$-$$",
+        "genie_tip": "An indoor arcade offering classic games and family entertainment."
+      },
+      {
+        "name": "Fun City Arcade",
+        "area": "Caroline Street and Boardwalk",
+        "price": "$-$$",
+        "genie_tip": "Enjoy arcade games, pinball, claw machines and air hockey."
+      },
+      {
+        "name": "Museum of Ocean City",
+        "area": "Downtown Ocean City",
+        "address": "217 S Baltimore Ave, Ocean City, MD 21842",
+        "price": "$",
+        "genie_tip": "Discover Ocean City history, local artifacts and exhibits."
+      },
+      {
+        "name": "Rainy Day Shopping",
+        "area": "Ocean City and West Ocean City",
+        "price": "$-$$$",
+        "genie_tip": "Explore boutiques, surf shops, souvenir stores and outlet shopping."
+      }
+    ],
+    "things_to_do": [
+      {
+        "name": "Ocean City Boardwalk",
+        "area": "Downtown Ocean City",
+        "price": "Free to walk",
+        "genie_tip": "Explore nearly three miles of Boardwalk attractions, shopping, food and ocean views."
+      },
+      {
+        "name": "Ocean City Beach",
+        "area": "Oceanfront",
+        "price": "Free",
+        "genie_tip": "Enjoy ten miles of beach, swimming, sunrise views and relaxation."
+      },
+      {
+        "name": "Jolly Roger Amusement Parks",
+        "area": "30th Street and Ocean City Pier",
+        "price": "$$-$$$",
+        "genie_tip": "Enjoy amusement rides, water attractions, go-karts and mini golf. Check seasonal schedules."
+      },
+      {
+        "name": "Northside Park",
+        "area": "125th Street, Bayside",
+        "price": "Free",
+        "genie_tip": "A scenic park with walking paths, playgrounds, fishing piers and picnic areas."
+      },
+      {
+        "name": "Inlet Park",
+        "area": "South End of Ocean City",
+        "price": "Free",
+        "genie_tip": "Enjoy scenic inlet views, boat watching and views toward Assateague."
+      }
+    ],
+    "shopping": [
+      {
+        "name": "Outlets Ocean City",
+        "area": "West Ocean City",
+        "address": "12741 Ocean Gateway, Ocean City, MD 21842",
+        "price": "$-$$$",
+        "genie_tip": "Shop brand-name clothing, shoes and accessories at outlet stores."
+      },
+      {
+        "name": "Ocean City Boardwalk Shopping",
+        "area": "Ocean City Boardwalk",
+        "price": "$-$$",
+        "genie_tip": "Find souvenirs, beachwear, gifts and specialty shops."
+      },
+      {
+        "name": "K-Coast Surf Shop",
+        "area": "35th Street",
+        "address": "3505 Coastal Hwy, Ocean City, MD 21842",
+        "price": "$$",
+        "genie_tip": "Shop surf apparel, swimwear, surfboards and beach accessories."
+      },
+      {
+        "name": "Quiet Storm Surf Shop",
+        "area": "Ocean City Boardwalk",
+        "address": "1 N Division St, Ocean City, MD 21842",
+        "price": "$$",
+        "genie_tip": "Find surf-inspired clothing, beachwear and accessories."
+      },
+      {
+        "name": "Gold Coast Mall",
+        "area": "115th Street",
+        "address": "115th St & Coastal Hwy, Ocean City, MD 21842",
+        "price": "$-$$",
+        "genie_tip": "A convenient uptown shopping center with stores, restaurants and services."
+      }
+    ],
+    "open_late": [
+      {
+        "name": "Seacrets",
+        "area": "49th Street, Bayside",
+        "address": "117 49th St, Ocean City, MD 21842",
+        "price": "$$-$$$",
+        "genie_tip": "A popular nightlife destination with music, DJs and dancing. Verify current hours."
+      },
+      {
+        "name": "Purple Moose Saloon",
+        "area": "Ocean City Boardwalk",
+        "price": "$$",
+        "genie_tip": "A lively option for late-night music and Boardwalk nightlife. Verify current hours."
+      },
+      {
+        "name": "Fager's Island",
+        "area": "60th Street, Bayside",
+        "address": "201 60th St, Ocean City, MD 21842",
+        "price": "$$-$$$",
+        "genie_tip": "Waterfront drinks, live entertainment and nightlife. Check the current schedule."
+      },
+      {
+        "name": "Ocean City Boardwalk",
+        "area": "Downtown Ocean City",
+        "price": "$-$$",
+        "genie_tip": "Explore evening Boardwalk entertainment, arcades and food. Individual business hours vary."
+      }
+    ],
+    "free_and_budget": [
+      {
+        "name": "Ocean City Beach",
+        "area": "Oceanfront",
+        "price": "Free",
+        "genie_tip": "Enjoy beach walks, sunrise views, swimming and ocean scenery without an admission fee."
+      },
+      {
+        "name": "Ocean City Boardwalk",
+        "area": "Downtown Ocean City",
+        "price": "Free to walk",
+        "genie_tip": "Enjoy ocean views, sightseeing and the Boardwalk atmosphere without spending money."
+      },
+      {
+        "name": "Northside Park",
+        "area": "125th Street, Bayside",
+        "address": "200 125th St, Ocean City, MD 21842",
+        "price": "Free",
+        "genie_tip": "Enjoy walking paths, playgrounds, fishing piers and picnic areas."
+      },
+      {
+        "name": "Inlet Park",
+        "area": "South End of Ocean City",
+        "price": "Free",
+        "genie_tip": "A peaceful waterfront location for scenic views and boat watching."
+      },
+      {
+        "name": "Ocean City Sunrise",
+        "area": "Oceanfront",
+        "price": "Free",
+        "genie_tip": "Watch the sunrise over the Atlantic Ocean and enjoy a peaceful morning beach walk."
+      },
+      {
+        "name": "Sunset on the Bayside",
+        "area": "Bayside Ocean City",
+        "price": "Free",
+        "genie_tip": "Enjoy beautiful sunset views over the bay, perfect for photos or a romantic evening."
+      }
+    ]
   }
-
-  const places = knowledge[category];
-
-  if (!places || !places.length) {
-    addMessage(
-      "I don't have a matching recommendation yet. " +
-      "Try asking about seafood, restaurants, " +
-      "nightlife, shopping, or family activities. " +
-      "If nothing works, check that oc-knowledge.json " +
-      "is uploaded correctly.",
-      "genie-message"
-    );
-    return;
-  }
-
-  const reply = addMessage(
-    "✨ Here are some Ocean City recommendations:",
-    "genie-message"
-  );
-
-  places.slice(0, 3).forEach(place => {
-    const card = document.createElement("div");
-    card.className = "result";
-
-    const title = document.createElement("strong");
-    title.textContent = place.name;
-    card.appendChild(title);
-
-    const details = document.createElement("p");
-    details.textContent =
-      [place.area, place.price].filter(Boolean).join(" · ");
-    card.appendChild(details);
-
-    const tip = document.createElement("p");
-    tip.textContent = place.genie_tip || "";
-    card.appendChild(tip);
-
-    if (place.address) {
-      const address = document.createElement("p");
-      address.textContent = "📍 " + place.address;
-      card.appendChild(address);
-    }
-
-    reply.appendChild(card);
-  });
 }
-
-function quickQuestion(question) {
-  input.value = question;
-  sendMessage();
-}
-
-document.getElementById("askForm")
-  .addEventListener("submit", event => {
-    event.preventDefault();
-    sendMessage();
-  });
-
-document.querySelectorAll("[data-question]")
-  .forEach(button => {
-    button.addEventListener("click", () => {
-      quickQuestion(button.dataset.question);
-    });
-  });
-</script>
