@@ -518,40 +518,6 @@ function sendMessage() {
   // Display Genie's answer
   addMessage(reply, "genie");
 }
-  
-  if (/crab|seafood|shrimp|oyster/.test(q)) {
-    category = "seafood";
-  } else if (/breakfast|brunch|pancake/.test(q)) {
-    category = "breakfast";
-  } else if (/rain|indoor/.test(q)) {
-    category = "rainy_day";
-  } else if (/date|romantic|anniversary/.test(q)) {
-    category = "date_night";
-  } else if (/nightlife|club|bar|music|dance/.test(q)) {
-    category = "nightlife";
-  } else if (/teen|arcade|go.kart/.test(q)) {
-    category = "teens";
-  } else if (/shop|store|outlet/.test(q)) {
-    category = "shopping";
-  } else if (/free|cheap|budget/.test(q)) {
-    category = "free_and_budget";
-  } else if (/family|kid|child/.test(q)) {
-    category = "family";
-  } else if (/late|tonight/.test(q)) {
-    category = "open_late";
-  } else if (/food|eat|restaurant|dinner|lunch/.test(q)) {
-    category = "food";
-  }
-
-  const places = categories[category];
-
-  if (!places || !places.length) {
-    addGenieMessage(
-      "I'm still loading my Ocean City recommendations. " +
-      "Please try again in a moment."
-    );
-    return;
-  }
 
   let reply = "✨ Here are some Ocean City recommendations:\n\n";
 
