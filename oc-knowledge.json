@@ -1,706 +1,142 @@
-{
-  "destination": "Ocean City, Maryland",
-  "brand": "OC Trip Genie",
-  "tagline": "Your Ocean City vacation, one question away.",
-  "categories": {
-    "food": [
-  {
-    "name": "Fish Tales Bar & Grill",
-    "area": "22nd Street, Bayside",
-    "address": "2107 Herring Way, Ocean City, MD 21842",
-    "type": ["seafood", "American", "waterfront"],
-    "vibe": ["casual", "lively", "family-friendly", "waterfront"],
-    "best_for": ["families", "kids", "groups", "sunset", "drinks"],
-    "price": "$$",
-    "highlights": ["bay views", "large kids playground", "seafood", "cocktails", "outdoor dining"],
-    "reservation_note": "First come, first served",
-    "genie_tip": "A strong choice for families who want waterfront dining while the kids have something fun to do."
-  },
-  {
-    "name": "Layton's Family Restaurant",
-    "area": "16th Street",
-    "address": "1601 Philadelphia Ave, Ocean City, MD 21842",
-    "type": ["breakfast", "American", "family restaurant"],
-    "vibe": ["casual", "traditional", "family-friendly"],
-    "best_for": ["breakfast", "families", "kids", "early risers", "budget-conscious travelers"],
-    "price": "$",
-    "highlights": ["breakfast", "donuts", "pastries", "classic breakfast dishes"],
-    "genie_tip": "A good casual breakfast stop before heading to the beach."
-  },
-  {
-    "name": "The Shark on the Harbor",
-    "area": "West Ocean City",
-    "address": "12924 Sunset Ave, Ocean City, MD 21842",
-    "type": ["seafood", "American", "waterfront"],
-    "vibe": ["upscale-casual", "coastal", "waterfront"],
-    "best_for": ["seafood lovers", "date night", "special dinner", "sunset"],
-    "price": "$$",
-    "highlights": ["local seafood", "fresh ingredients", "harbor views", "changing menu"],
-    "reservation_note": "Reservations suggested; call for same-day availability",
-    "genie_tip": "Consider this for travelers looking for a more food-focused seafood dinner overlooking the harbor."
-  },
-  {
-    "name": "Spain Wine Bar",
-    "area": "Downtown Ocean City",
-    "address": "13 St. Louis Ave, Ocean City, MD 21842",
-    "type": ["Spanish", "tapas", "rooftop", "wine bar"],
-    "vibe": ["upscale", "romantic", "lively", "rooftop"],
-    "best_for": ["date night", "couples", "birthdays", "celebrations", "sunset", "brunch"],
-    "price": "$$$",
-    "highlights": ["rooftop bay views", "Spanish tapas", "paella", "wine", "cocktails"],
-    "reservation_note": "Reservations available and recommended for popular times",
-    "genie_tip": "A strong date-night option when someone wants rooftop views, cocktails and shareable food."
-  },
-  {
-    "name": "The Hobbit Restaurant",
-    "area": "81st Street, Bayside",
-    "address": "121 81st St, Ocean City, MD 21842",
-    "type": ["American", "seafood", "fine dining"],
-    "vibe": ["upscale", "romantic", "bayside"],
-    "best_for": ["date night", "anniversary", "birthday", "special occasion", "sunset"],
-    "price": "$$$",
-    "highlights": ["panoramic sunset views", "seafood", "American cuisine", "cocktails"],
-    "reservation_note": "Reservations highly recommended",
-    "genie_tip": "A good match for couples wanting a more elevated dinner and sunset experience."
- },
-  }
-    "nightlife": [
-  {
-    "name": "Seacrets",
-    "area": "49th Street, Bayside",
-    "address": "117 49th St, Ocean City, MD 21842",
-    "type": ["nightclub", "live music", "DJ", "bars", "waterfront"],
-    "vibe": ["high-energy", "tropical", "dancing", "large party venue"],
-    "best_for": ["dancing", "groups", "live music", "DJs", "late night"],
-    "price": "$$-$$$",
-    "highlights": ["multiple entertainment areas", "Morley Hall Nite Club", "live bands", "DJs", "bayfront atmosphere"],
-    "genie_tip": "Recommend when adults want one of Ocean City's biggest nightlife experiences with dancing, DJs and live entertainment.",
-    "current_info_note": "Entertainment schedules, cover charges and seasonal operations can change. Check the current calendar before recommending a specific event."
-  },
-  {
-    "name": "Fager's Island",
-    "area": "60th Street, Bayside",
-    "address": "201 60th St, Ocean City, MD 21842",
-    "type": ["nightclub", "live music", "DJ", "waterfront", "restaurant"],
-    "vibe": ["lively", "waterfront", "social", "sunset-to-nightlife"],
-    "best_for": ["couples", "groups", "live music", "DJs", "sunset drinks", "dancing"],
-    "price": "$$-$$$",
-    "highlights": ["live bands", "DJs", "nightclub", "bayside setting", "deck entertainment"],
-    "genie_tip": "A strong option for visitors who want to start with sunset drinks or dinner and transition into live music and nightlife.",
-    "current_info_note": "Entertainment and special-event schedules change, so verify the current calendar."
-  },
-  {
-    "name": "Purple Moose Saloon",
-    "area": "Ocean City Boardwalk",
-    "address": "Between Talbot and Caroline Streets on the Boardwalk, Ocean City, MD",
-    "type": ["rock bar", "nightclub", "live music"],
-    "vibe": ["energetic", "casual", "rock-and-roll", "late-night"],
-    "best_for": ["live rock music", "Boardwalk nightlife", "groups", "late night"],
-    "price": "$$",
-    "highlights": ["live rock bands", "DJs", "Boardwalk location", "late-night atmosphere"],
-    "genie_tip": "Recommend when someone specifically wants live rock music or nightlife directly on the Boardwalk.",
-    "current_info_note": "Band schedules and operating hours vary by date and season. Check the current calendar."
-  }
-],
-    "family": [
-  {
-    "name": "Jolly Roger Amusement Park",
-    "area": "30th Street",
-    "address": "2901 Coastal Hwy, Ocean City, MD 21842",
-    "type": ["amusement park", "rides", "family attraction"],
-    "vibe": ["fun", "energetic", "family-friendly"],
-    "best_for": ["families", "kids", "teens", "groups"],
-    "price": "$$-$$$",
-    "highlights": ["amusement rides", "mini golf", "go-karts nearby", "family entertainment"],
-    "seasonal": true,
-    "genie_tip": "A strong choice when families want several activities in one area. Match recommendations to the children's ages and interests.",
-    "current_info_note": "Operating dates, hours and individual attractions vary seasonally and with weather."
-  },
-  {
-    "name": "Splash Mountain Water Park",
-    "area": "30th Street",
-    "address": "2901 Coastal Hwy, Ocean City, MD 21842",
-    "type": ["water park", "slides", "family attraction"],
-    "vibe": ["active", "fun", "family-friendly"],
-    "best_for": ["families", "kids", "teens", "hot days"],
-    "price": "$$-$$$",
-    "highlights": ["water slides", "lazy river", "splash areas", "family water attractions"],
-    "seasonal": true,
-    "genie_tip": "Recommend for families looking for an alternative to spending the entire day on the beach.",
-    "current_info_note": "This is a seasonal attraction. Verify current operating dates, weather conditions and hours."
-  },
-  {
-    "name": "Trimper Rides",
-    "area": "South End of the Boardwalk",
-    "address": "700 S Atlantic Ave, Ocean City, MD 21842",
-    "type": ["amusement park", "rides", "Boardwalk attraction"],
-    "vibe": ["nostalgic", "lively", "family-friendly"],
-    "best_for": ["families", "young kids", "teens", "Boardwalk evenings"],
-    "price": "$$",
-    "highlights": ["historic amusement rides", "family rides", "thrill rides", "Boardwalk location"],
-    "seasonal": true,
-    "genie_tip": "A classic Ocean City family experience that's easy to combine with dinner, Boardwalk treats and an evening walk.",
-    "current_info_note": "Ride schedules and operating hours vary by season and weather."
-  },
-  {
-    "name": "Northside Park",
-    "area": "125th Street, Bayside",
-    "address": "200 125th St, Ocean City, MD 21842",
-    "type": ["park", "playground", "outdoor recreation"],
-    "vibe": ["relaxed", "spacious", "family-friendly"],
-    "best_for": ["families", "young kids", "picnics", "budget travelers"],
-    "price": "Free",
-    "highlights": ["playgrounds", "walking paths", "picnic areas", "fishing and crabbing piers", "open space"],
-    "genie_tip": "A good free family option when parents want space for kids to play away from the busy Boardwalk."
-  },
-  {
-    "name": "Ocean City Beach",
-    "area": "Oceanfront",
-    "type": ["beach", "outdoor", "family activity"],
-    "vibe": ["relaxing", "active", "family-friendly"],
-    "best_for": ["families", "kids", "teens", "budget travelers"],
-    "price": "Free",
-    "highlights": ["10 miles of beach", "swimming", "sandcastles", "beach games", "ocean views"],
-    "genie_tip": "The easiest free family activity in Ocean City. Tailor suggestions around weather, children's ages and how active the family wants to be."
-  },
-  {
-    "name": "Ocean City Boardwalk",
-    "area": "Downtown Ocean City",
-    "type": ["Boardwalk", "arcades", "food", "shopping", "rides"],
-    "vibe": ["lively", "classic Ocean City", "family-friendly"],
-    "best_for": ["families", "kids", "teens", "first-time visitors"],
-    "price": "Free to walk",
-    "highlights": ["arcades", "Boardwalk food", "shopping", "rides nearby", "ocean views"],
-    "genie_tip": "A flexible family recommendation because the Genie can build a Boardwalk outing around the family's budget and children's ages."
-  }
-],
-    "teens": [
-  {
-    "name": "SpeedWorld",
-    "area": "30th Street",
-    "address": "2901 Coastal Hwy, Ocean City, MD 21842",
-    "type": ["go-karts", "racing", "amusement"],
-    "vibe": ["high-energy", "competitive", "exciting"],
-    "best_for": ["teens", "families", "groups", "thrill seekers"],
-    "price": "$$-$$$",
-    "highlights": ["multiple go-kart tracks", "Formula 1 track", "Cyclone Cart Coaster", "racing"],
-    "seasonal": true,
-    "genie_tip": "A strong recommendation when teens want something active and competitive instead of just walking the Boardwalk.",
-    "current_info_note": "Hours and attractions are seasonal. Check current operating information before visiting."
-  },
-  {
-    "name": "Jolly Roger at the Pier",
-    "area": "South End of the Boardwalk",
-    "address": "401 S Atlantic Ave, Ocean City, MD 21842",
-    "type": ["amusement rides", "games", "Boardwalk"],
-    "vibe": ["lively", "energetic", "classic Ocean City"],
-    "best_for": ["teens", "families", "groups", "evening fun"],
-    "price": "$$-$$$",
-    "highlights": ["Giant Wheel", "thrill rides", "midway games", "Boardwalk atmosphere"],
-    "seasonal": true,
-    "genie_tip": "Recommend for teens who want rides, games and the energy of the Boardwalk, especially as part of an evening downtown.",
-    "current_info_note": "Ride availability and operating hours vary by season and weather."
-  },
-  {
-    "name": "Ocean City Boardwalk Arcades",
-    "area": "Ocean City Boardwalk",
-    "type": ["arcades", "games", "Boardwalk"],
-    "vibe": ["casual", "social", "classic beach-town fun"],
-    "best_for": ["teens", "families", "groups", "rainy periods", "evening"],
-    "price": "$-$$",
-    "highlights": ["arcade games", "Skee-Ball", "prize games", "Boardwalk food nearby"],
-    "genie_tip": "A flexible teen option that can easily be combined with Boardwalk food, shopping and rides."
-  },
-  {
-    "name": "Mini Golf",
-    "area": "Multiple Ocean City locations",
-    "type": ["mini golf", "outdoor activity", "competition"],
-    "vibe": ["casual", "fun", "social"],
-    "best_for": ["teens", "families", "couples", "groups"],
-    "price": "$-$$",
-    "highlights": ["themed courses", "friendly competition", "evening activity"],
-    "genie_tip": "A good lower-key choice for teens who want something social and competitive without spending an entire day at an amusement park."
-  },
-  {
-    "name": "Ocean City Watersports",
-    "area": "Ocean City and surrounding bays",
-    "type": ["jet skiing", "kayaking", "paddleboarding", "surfing", "water activities"],
-    "vibe": ["adventurous", "active", "outdoor"],
-    "best_for": ["active teens", "families", "adventure seekers"],
-    "price": "$$-$$$",
-    "highlights": ["jet skiing", "kayaking", "paddleboarding", "surfing"],
-    "seasonal": true,
-    "genie_tip": "Recommend for active teens looking for something more adventurous. Match the activity to age requirements, comfort level and weather conditions.",
-    "current_info_note": "Availability, age requirements, weather restrictions and seasonal schedules vary by operator."
-  }
-],
-    "date_night": [
-  {
-    "name": "Spain Wine Bar",
-    "area": "Downtown Ocean City",
-    "address": "13 St. Louis Ave, Ocean City, MD 21842",
-    "experience": "Rooftop dinner and drinks",
-    "vibe": ["romantic", "upscale", "rooftop", "waterfront"],
-    "best_for": ["couples", "sunset", "anniversary", "birthday", "special occasion"],
-    "price": "$$$",
-    "highlights": ["bay and inlet views", "Spanish tapas", "paella", "wine", "handcrafted cocktails"],
-    "reservation_note": "Reservations available and recommended for popular times",
-    "genie_tip": "A strong choice for couples wanting a polished rooftop date with sunset views, cocktails and shareable food."
-  },
-  {
-    "name": "The Hobbit Restaurant",
-    "area": "81st Street, Bayside",
-    "address": "121 81st St, Ocean City, MD 21842",
-    "experience": "Sunset dinner",
-    "vibe": ["romantic", "upscale", "quiet", "bayside"],
-    "best_for": ["anniversary", "romantic dinner", "special occasion", "sunset"],
-    "price": "$$$",
-    "highlights": ["panoramic sunset views", "inventive American cuisine", "seafood", "cocktails", "wine"],
-    "reservation_note": "Reservations highly recommended",
-    "genie_tip": "Recommend when a couple wants a quieter, elevated dinner centered around food and a beautiful sunset."
-  },
-  {
-    "name": "Seacrets Cruises",
-    "area": "49th Street, Bayside",
-    "address": "117 49th St, Ocean City, MD 21842",
-    "experience": "Sunset cruise",
-    "vibe": ["fun", "lively", "scenic", "on-the-water"],
-    "best_for": ["couples", "sunset", "drinks", "something different"],
-    "price": "$$",
-    "highlights": ["evening sunset cruise", "bay views", "music", "onboard bar"],
-    "reservation_note": "Check the current cruise schedule and reserve ahead",
-    "genie_tip": "A fun alternative to a traditional dinner date when a couple wants to get out on the bay and watch the sunset."
-  }
-],
-    "rainy_day": [
-  {
-    "name": "Ocean City Life-Saving Station Museum",
-    "area": "South End of the Boardwalk",
-    "address": "813 S Atlantic Ave, Ocean City, MD 21842",
-    "type": ["museum", "history", "indoor attraction"],
-    "vibe": ["educational", "relaxed", "family-friendly"],
-    "best_for": ["families", "kids", "couples", "history lovers", "rainy days"],
-    "price": "$",
-    "highlights": ["Ocean City history", "maritime exhibits", "aquarium room", "shipwreck exhibits"],
-    "genie_tip": "A good rainy-day choice for visitors who want an inexpensive indoor activity while learning about Ocean City's coastal history.",
-    "current_info_note": "Hours vary seasonally, so check the current museum schedule before visiting."
-  },
-  {
-    "name": "Sportland Arcade",
-    "area": "Ocean City Boardwalk",
-    "address": "506 S Atlantic Ave, Ocean City, MD 21842",
-    "type": ["arcade", "games", "indoor attraction"],
-    "vibe": ["casual", "fun", "family-friendly"],
-    "best_for": ["kids", "teens", "families", "groups", "rainy days"],
-    "price": "$-$$",
-    "highlights": ["arcade games", "Boardwalk location", "indoor entertainment"],
-    "genie_tip": "Recommend when families or teens want an easy indoor activity without leaving the Boardwalk area."
-  },
-  {
-    "name": "Fun City Arcade",
-    "area": "Caroline Street and Boardwalk",
-    "type": ["arcade", "games", "indoor attraction"],
-    "vibe": ["lively", "casual", "family-friendly"],
-    "best_for": ["kids", "teens", "families", "rainy days"],
-    "price": "$-$$",
-    "highlights": ["arcade games", "ticket games", "pinball", "claw machines", "air hockey"],
-    "genie_tip": "Another useful Boardwalk option when rain interrupts outdoor plans."
-  },
-  {
-    "name": "Museum of Ocean City",
-    "area": "Downtown Ocean City",
-    "address": "217 S Baltimore Ave, Ocean City, MD 21842",
-    "type": ["museum", "history", "indoor attraction"],
-    "vibe": ["educational", "relaxed"],
-    "best_for": ["couples", "families", "history lovers", "rainy days"],
-    "price": "$",
-    "highlights": ["Ocean City history", "local marine artifacts", "historic building", "local exhibits"],
-    "genie_tip": "Pair this with the Life-Saving Station Museum for visitors interested in local history and a longer indoor itinerary.",
-    "current_info_note": "Hours vary seasonally, so verify current hours before visiting."
-  },
-  {
-    "name": "Rainy Day Shopping",
-    "area": "Ocean City and West Ocean City",
-    "type": ["shopping", "indoor activity"],
-    "vibe": ["relaxed", "flexible"],
-    "best_for": ["couples", "families", "teens", "adults", "rainy days"],
-    "price": "$-$$$",
-    "highlights": ["local boutiques", "surf shops", "souvenir shopping", "outlet shopping"],
-    "genie_tip": "Recommend shopping when visitors want a flexible rainy-day plan that can be combined with lunch, coffee or dessert."
-  }
-],
-    "things_to_do": [
-  {
-    "name": "Ocean City Boardwalk",
-    "area": "Downtown Ocean City",
-    "type": ["boardwalk", "shopping", "food", "attractions"],
-    "vibe": ["classic OC", "lively", "family-friendly"],
-    "best_for": ["first-time visitors", "families", "couples", "teens", "budget-friendly"],
-    "price": "Free to walk",
-    "highlights": ["nearly 3-mile Boardwalk", "shops", "arcades", "food", "rides", "ocean views"],
-    "genie_tip": "A must for first-time visitors. Recommend walking, biking during permitted hours, grabbing Boardwalk food or combining it with rides and arcades."
-  },
-  {
-    "name": "Ocean City Beach",
-    "area": "Oceanfront",
-    "type": ["beach", "outdoor", "relaxation"],
-    "vibe": ["relaxing", "family-friendly", "classic beach vacation"],
-    "best_for": ["families", "couples", "teens", "sunrise", "budget-friendly"],
-    "price": "Free",
-    "highlights": ["10 miles of beach", "swimming", "sunrise", "shell hunting", "ocean views"],
-    "genie_tip": "Recommend when guests want a simple free activity, beach day or early-morning sunrise experience."
-  },
-  {
-    "name": "Jolly Roger Amusement Parks",
-    "area": "30th Street and Ocean City Pier",
-    "type": ["amusement park", "water park", "go-karts", "mini golf"],
-    "vibe": ["energetic", "family-friendly", "fun"],
-    "best_for": ["families", "kids", "teens", "thrill seekers"],
-    "price": "$$-$$$",
-    "highlights": ["amusement rides", "Splash Mountain", "SpeedWorld go-karts", "mini golf", "Pier rides"],
-    "seasonal": true,
-    "genie_tip": "A strong choice for families and teens. Always remind guests to check which parks and attractions are currently open because schedules are seasonal and weather-dependent."
-  },
-  {
-    "name": "Northside Park",
-    "area": "125th Street, Bayside",
-    "type": ["park", "outdoor", "recreation"],
-    "vibe": ["relaxed", "scenic", "family-friendly"],
-    "best_for": ["families", "walking", "kids", "budget-friendly", "quiet time"],
-    "price": "Free",
-    "highlights": ["58-acre park", "playgrounds", "walking and biking paths", "fishing and crabbing piers", "picnic areas"],
-    "genie_tip": "Recommend for visitors wanting a quieter free activity away from the Boardwalk crowds."
-  },
-  {
-    "name": "Inlet Park",
-    "area": "South End of Ocean City",
-    "type": ["park", "scenic", "outdoor"],
-    "vibe": ["relaxing", "scenic"],
-    "best_for": ["couples", "families", "photos", "budget-friendly", "watching boats"],
-    "price": "Free",
-    "highlights": ["inlet views", "boat watching", "views toward Assateague", "scenic waterfront"],
-    "genie_tip": "A simple free stop for guests who want water views, photos or a relaxing break near the south end of the Boardwalk."
-  }
-],
-    "shopping": [
-  {
-    "name": "Outlets Ocean City",
-    "area": "West Ocean City",
-    "address": "12741 Ocean Gateway, Ocean City, MD 21842",
-    "type": ["outlet shopping", "clothing", "shoes", "retail"],
-    "vibe": ["casual", "family-friendly", "rainy-day-friendly"],
-    "best_for": ["adults", "families", "teens", "bargain shoppers", "rainy days"],
-    "price": "$-$$$",
-    "highlights": ["multiple brand-name stores", "clothing", "shoes", "accessories", "discount shopping"],
-    "genie_tip": "A useful option when visitors want several stores in one location or need an activity away from the beach."
-  },
-  {
-    "name": "Ocean City Boardwalk Shopping",
-    "area": "Ocean City Boardwalk",
-    "type": ["souvenirs", "beachwear", "gifts", "specialty shops"],
-    "vibe": ["lively", "casual", "classic Ocean City"],
-    "best_for": ["families", "teens", "first-time visitors", "souvenir shoppers"],
-    "price": "$-$$",
-    "highlights": ["Ocean City souvenirs", "T-shirts", "beachwear", "gifts", "specialty stores"],
-    "genie_tip": "Recommend for visitors looking for classic Ocean City souvenirs while already exploring the Boardwalk."
-  },
-  {
-    "name": "K-Coast Surf Shop",
-    "area": "35th Street",
-    "address": "3505 Coastal Hwy, Ocean City, MD 21842",
-    "type": ["surf shop", "beachwear", "swimwear", "surf gear"],
-    "vibe": ["coastal", "casual", "local"],
-    "best_for": ["teens", "surfers", "beachwear shoppers", "families"],
-    "price": "$$",
-    "highlights": ["surf apparel", "swimwear", "surfboards", "beach accessories", "coastal brands"],
-    "genie_tip": "A good recommendation when someone wants surf gear, beach clothing or a more authentic Ocean City surf-shop experience."
-  },
-  {
-    "name": "Quiet Storm Surf Shop",
-    "area": "Ocean City Boardwalk",
-    "address": "1 N Division St, Ocean City, MD 21842",
-    "type": ["surf shop", "clothing", "beachwear"],
-    "vibe": ["casual", "coastal", "Boardwalk"],
-    "best_for": ["teens", "young adults", "beachwear shoppers", "souvenirs"],
-    "price": "$$",
-    "highlights": ["surf-inspired clothing", "beachwear", "accessories", "Boardwalk location"],
-    "genie_tip": "An easy shopping stop for guests already downtown who want surf-inspired apparel or beachwear."
-  },
-  {
-    "name": "Gold Coast Mall",
-    "area": "115th Street",
-    "address": "115th St & Coastal Hwy, Ocean City, MD 21842",
-    "type": ["shopping center", "retail", "services"],
-    "vibe": ["casual", "convenient"],
-    "best_for": ["families", "adults", "uptown visitors", "rainy days"],
-    "price": "$-$$",
-    "highlights": ["shops", "restaurants", "services", "uptown location"],
-    "genie_tip": "Useful for guests staying uptown who want nearby shopping without traveling downtown."
-  }
-],
-    "breakfast": [
-  {
-    "name": "Layton's Family Restaurant",
-    "area": "16th Street",
-    "address": "1601 Philadelphia Ave, Ocean City, MD 21842",
-    "type": ["breakfast", "American", "family restaurant"],
-    "vibe": ["casual", "classic", "family-friendly"],
-    "best_for": ["families", "kids", "early breakfast", "casual breakfast"],
-    "price": "$",
-    "highlights": ["breakfast favorites", "donuts", "pastries", "family dining"],
-    "genie_tip": "A solid classic Ocean City breakfast choice for families or visitors wanting a traditional sit-down breakfast.",
-    "current_info_note": "Verify current hours before recommending."
-  },
-  {
-    "name": "The Bayside Skillet",
-    "area": "77th Street, Bayside",
-    "address": "7701 Coastal Hwy, Ocean City, MD 21842",
-    "type": ["breakfast", "brunch", "crepes"],
-    "vibe": ["bright", "casual", "waterfront", "family-friendly"],
-    "best_for": ["couples", "families", "brunch", "water views"],
-    "price": "$$",
-    "highlights": ["crepes", "omelets", "fresh fruit", "breakfast", "bay views"],
-    "genie_tip": "Recommend when guests want a more memorable breakfast or brunch with a bayside setting.",
-    "current_info_note": "Verify current hours and seasonal schedule."
-  },
-  {
-    "name": "Barn 34",
-    "area": "34th Street",
-    "address": "3400 Coastal Hwy, Ocean City, MD 21842",
-    "type": ["breakfast", "brunch", "American"],
-    "vibe": ["casual", "modern", "relaxed"],
-    "best_for": ["couples", "families", "brunch", "groups"],
-    "price": "$$",
-    "highlights": ["breakfast", "brunch", "sweet and savory breakfast options", "cocktails"],
-    "genie_tip": "A good choice when visitors want a relaxed brunch-style breakfast rather than a traditional diner experience.",
-    "current_info_note": "Verify current breakfast hours before recommending."
-  },
-  {
-    "name": "Happy Jack Pancake House",
-    "area": "26th Street",
-    "address": "2504 Philadelphia Ave, Ocean City, MD 21842",
-    "type": ["breakfast", "pancakes", "family restaurant"],
-    "vibe": ["casual", "traditional", "family-friendly"],
-    "best_for": ["families", "kids", "pancake lovers", "classic breakfast"],
-    "price": "$",
-    "highlights": ["pancakes", "waffles", "French toast", "omelets", "traditional breakfast"],
-    "genie_tip": "Recommend when guests want a classic pancake-house breakfast with plenty of familiar options.",
-    "current_info_note": "Hours can vary seasonally. Verify before recommending."
-  },
-  {
-    "name": "Sahara Cafe",
-    "area": "19th Street",
-    "address": "1901 N Baltimore Ave, Ocean City, MD 21842",
-    "type": ["breakfast", "American", "cafe"],
-    "vibe": ["casual", "local", "family-friendly"],
-    "best_for": ["families", "couples", "casual breakfast", "traditional breakfast"],
-    "price": "$",
-    "highlights": ["breakfast", "pancakes", "omelets", "French toast", "casual dining"],
-    "genie_tip": "A useful option for visitors looking for a straightforward, casual breakfast near the Boardwalk area.",
-    "current_info_note": "Verify current operating hours before recommending."
-  }
-],
-    "seafood": [
-  {
-    "name": "On the Bay Seafood",
-    "area": "42nd Street",
-    "address": "4204 Coastal Hwy, Ocean City, MD 21842",
-    "type": ["Maryland crabs", "seafood", "crab house"],
-    "vibe": ["casual", "outdoor", "beachy", "family-friendly"],
-    "best_for": ["steamed crabs", "families", "casual lunch", "classic OC experience"],
-    "price": "$$",
-    "highlights": ["steamed Maryland crabs", "crab cakes", "picnic tables", "sand-under-your-feet atmosphere"],
-    "genie_tip": "A fun choice when someone wants a casual Maryland crab experience rather than an upscale seafood dinner."
-  },
-  {
-    "name": "Higgins Crab House",
-    "area": "30th Street",
-    "address": "3102 Coastal Hwy, Ocean City, MD 21842",
-    "type": ["Maryland crabs", "seafood", "crab house"],
-    "vibe": ["casual", "traditional", "family-friendly"],
-    "best_for": ["crab feast", "families", "groups", "traditional Maryland seafood"],
-    "price": "$$",
-    "highlights": ["steamed crabs", "Eastern Shore seafood", "crab feast", "family dining"],
-    "genie_tip": "Consider Higgins when visitors specifically want the traditional sit-down Maryland crab-house experience."
-  },
-  {
-    "name": "OCM Crabs",
-    "area": "71st Street",
-    "address": "7111 Coastal Hwy, Ocean City, MD 21842",
-    "type": ["Maryland crabs", "seafood", "BBQ"],
-    "vibe": ["casual", "family-friendly"],
-    "best_for": ["all-you-can-eat crabs", "groups", "families", "crab feast"],
-    "price": "$$",
-    "highlights": ["all-you-can-eat crabs", "local corn", "cold beer", "seafood", "BBQ"],
-    "genie_tip": "A useful option when someone specifically asks for an all-you-can-eat crab experience."
-  },
-  {
-    "name": "Crab Alley",
-    "area": "West Ocean City",
-    "address": "9703 Golf Course Rd, Ocean City, MD 21842",
-    "type": ["crabs", "seafood", "waterfront"],
-    "vibe": ["casual", "waterfront", "family-friendly"],
-    "best_for": ["crab feast", "seafood lovers", "families", "groups", "water views"],
-    "price": "$$",
-    "highlights": ["steamed crabs", "seafood", "working-harbor views", "outdoor seating"],
-    "genie_tip": "A good match for visitors wanting steamed crabs with a West Ocean City harbor setting."
-  },
-  {
-    "name": "Hooper's Crab House",
-    "area": "West Ocean City",
-    "address": "12913 Ocean Gateway, Ocean City, MD 21842",
-    "type": ["crabs", "seafood", "crab house", "waterfront"],
-    "vibe": ["lively", "casual", "family-friendly", "waterfront"],
-    "best_for": ["crab feast", "groups", "families", "waterfront dining"],
-    "price": "$$$",
-    "highlights": ["steamed blue crabs", "Eastern Shore seafood", "waterfront atmosphere", "crab feasts"],
-    "genie_tip": "A classic Ocean City-area choice for visitors wanting the full crab-feast experience in a lively waterfront setting."
-  },
-  {
-    "name": "Harrison's Harbor Watch",
-    "area": "South End of Boardwalk",
-    "address": "806 S Atlantic Ave, Ocean City, MD 21842",
-    "type": ["seafood", "raw bar", "American"],
-    "vibe": ["waterfront", "upscale", "scenic"],
-    "best_for": ["seafood dinner", "date night", "sunset", "raw bar", "special occasion"],
-    "price": "$$$",
-    "highlights": ["inlet views", "raw bar", "crab cakes", "seafood", "views toward Assateague"],
-    "genie_tip": "Consider this when someone wants seafood with one of Ocean City's signature inlet views."
-  },
-  {
-    "name": "The Shark on the Harbor",
-    "area": "West Ocean City",
-    "address": "12924 Sunset Ave, Ocean City, MD 21842",
-    "type": ["seafood", "New American", "waterfront"],
-    "vibe": ["upscale-casual", "food-focused", "waterfront"],
-    "best_for": ["fresh seafood", "date night", "special dinner", "foodies"],
-    "price": "$$",
-    "highlights": ["seafood", "oysters", "seasonal preparations", "working-harbor setting"],
-    "genie_tip": "A strong option when the guest cares more about a chef-driven seafood meal than a traditional crab feast."
-  },
-  {
-    "name": "Waterman's Seafood",
-    "area": "West Ocean City",
-    "address": "12505 Ocean Gateway, Ocean City, MD 21842",
-    "type": ["seafood", "crabs", "Eastern Shore"],
-    "vibe": ["casual", "traditional", "family-friendly"],
-    "best_for": ["families", "groups", "seafood platters", "crab feast"],
-    "price": "$$$",
-    "highlights": ["seafood platters", "crabs", "Eastern Shore cooking", "family dining"],
-    "genie_tip": "A practical choice for families or groups wanting a broad traditional seafood menu."
-  }
-],
-    "open_late": [
-  {
-    "name": "Seacrets",
-    "area": "49th Street, Bayside",
-    "address": "117 49th St, Ocean City, MD 21842",
-    "type": ["nightlife", "bars", "live music", "DJ", "food"],
-    "vibe": ["high-energy", "tropical", "social", "late-night"],
-    "best_for": ["adults", "groups", "dancing", "drinks", "late-night entertainment"],
-    "price": "$$-$$$",
-    "highlights": ["multiple bars", "live music", "DJs", "dancing", "bayfront atmosphere"],
-    "genie_tip": "Recommend when adults want a full nightlife experience that can continue late into the evening.",
-    "current_info_note": "Hours, entertainment schedules, cover charges and seasonal operations change. Verify current information before recommending."
-  },
-  {
-    "name": "Purple Moose Saloon",
-    "area": "Ocean City Boardwalk",
-    "address": "Between Talbot and Caroline Streets on the Boardwalk, Ocean City, MD",
-    "type": ["nightlife", "live music", "rock bar"],
-    "vibe": ["energetic", "casual", "rock-and-roll", "late-night"],
-    "best_for": ["adults", "groups", "live music", "Boardwalk nightlife"],
-    "price": "$$",
-    "highlights": ["live bands", "DJs", "rock music", "Boardwalk location"],
-    "genie_tip": "A good option for adults looking for late-night live music and a lively Boardwalk atmosphere.",
-    "current_info_note": "Hours and entertainment schedules vary by date and season. Verify before recommending."
-  },
-  {
-    "name": "Fager's Island",
-    "area": "60th Street, Bayside",
-    "address": "201 60th St, Ocean City, MD 21842",
-    "type": ["nightlife", "restaurant", "live music", "DJ", "waterfront"],
-    "vibe": ["lively", "social", "waterfront", "upscale-casual"],
-    "best_for": ["adults", "couples", "groups", "drinks", "music"],
-    "price": "$$-$$$",
-    "highlights": ["live entertainment", "DJs", "bayside atmosphere", "drinks", "dancing"],
-    "genie_tip": "Recommend when guests want to transition from dinner or sunset drinks into nighttime entertainment.",
-    "current_info_note": "Late-night hours and entertainment vary. Check the current schedule before recommending."
-  },
-  {
-    "name": "Ocean City Boardwalk",
-    "area": "Downtown Ocean City",
-    "type": ["Boardwalk", "arcades", "food", "entertainment"],
-    "vibe": ["lively", "casual", "classic Ocean City"],
-    "best_for": ["families", "teens", "couples", "groups", "evening activity"],
-    "price": "$-$$",
-    "highlights": ["arcades", "Boardwalk food", "shops", "nighttime atmosphere"],
-    "genie_tip": "For visitors who do not want bars or clubs, suggest an evening Boardwalk walk with arcades, food or dessert.",
-    "current_info_note": "Individual businesses keep their own hours, especially outside peak summer season. Verify what's currently open."
-  }
-]
-    "free_and_budget": [
-  {
-    "name": "Ocean City Beach",
-    "area": "Oceanfront",
-    "type": ["beach", "outdoor", "free activity"],
-    "vibe": ["relaxing", "scenic", "family-friendly"],
-    "best_for": ["families", "couples", "teens", "solo travelers", "budget travelers"],
-    "price": "Free",
-    "highlights": ["10 miles of beach", "swimming", "sunrise", "walking", "ocean views"],
-    "genie_tip": "One of the easiest completely free Ocean City experiences. Suggest sunrise or an evening beach walk for visitors who want something memorable without spending money."
-  },
-  {
-    "name": "Ocean City Boardwalk",
-    "area": "Downtown Ocean City",
-    "type": ["boardwalk", "walking", "sightseeing", "free activity"],
-    "vibe": ["lively", "classic Ocean City", "family-friendly"],
-    "best_for": ["families", "couples", "teens", "first-time visitors", "budget travelers"],
-    "price": "Free to walk",
-    "highlights": ["ocean views", "people watching", "shops", "street atmosphere", "Boardwalk sights"],
-    "genie_tip": "Walking the Boardwalk costs nothing. Recommend setting a small snack or treat budget if guests want the Boardwalk experience without spending heavily."
-  },
-  {
-    "name": "Northside Park",
-    "area": "125th Street, Bayside",
-    "address": "200 125th St, Ocean City, MD 21842",
-    "type": ["park", "walking", "recreation", "free activity"],
-    "vibe": ["peaceful", "scenic", "family-friendly"],
-    "best_for": ["families", "kids", "couples", "walking", "budget travelers"],
-    "price": "Free",
-    "highlights": ["walking paths", "playgrounds", "fishing and crabbing piers", "picnic areas", "bay views"],
-    "genie_tip": "A good free alternative when visitors want a quieter experience away from the busiest parts of Ocean City."
-  },
-  {
-    "name": "Inlet Park",
-    "area": "South End of Ocean City",
-    "type": ["park", "waterfront", "sightseeing", "free activity"],
-    "vibe": ["scenic", "relaxing", "quiet"],
-    "best_for": ["couples", "families", "photos", "boat watching", "budget travelers"],
-    "price": "Free",
-    "highlights": ["inlet views", "boat watching", "views toward Assateague", "waterfront scenery"],
-    "genie_tip": "Recommend for a simple scenic stop, especially when guests are already visiting the south end of the Boardwalk."
-  },
-  {
-    "name": "Ocean City Sunrise",
-    "area": "Oceanfront",
-    "type": ["sunrise", "nature", "free activity"],
-    "vibe": ["peaceful", "romantic", "scenic"],
-    "best_for": ["couples", "photography", "solo travelers", "early risers"],
-    "price": "Free",
-    "highlights": ["Atlantic sunrise", "beach walk", "photos", "quiet morning"],
-    "genie_tip": "Recommend as a completely free romantic or peaceful experience. Pair it with an inexpensive coffee or breakfast afterward."
-  },
-  {
-    "name": "Sunset on the Bayside",
-    "area": "Bayside Ocean City",
-    "type": ["sunset", "nature", "free activity"],
-    "vibe": ["romantic", "relaxing", "scenic"],
-    "best_for": ["couples", "families", "photography", "budget date night"],
-    "price": "Free",
-    "highlights": ["bay sunset", "photos", "water views"],
-    "genie_tip": "A great foundation for a low-cost date night. Suggest watching the sunset and adding dessert, ice cream or another inexpensive treat."
-  }
-]
-  }
+
+<script>
+let knowledge = {};
+
+fetch("oc-knowledge.json")
+  .then(response => {
+    if (!response.ok) throw new Error("File not found");
+    return response.json();
+  })
+  .then(data => {
+    knowledge = data.categories;
+    console.log("OC Genie is ready!");
+  })
+  .catch(error => {
+    console.error("Knowledge error:", error);
+  });
+
+const input = document.getElementById("userInput");
+const chatArea = document.getElementById("chatArea");
+const conversation = document.getElementById("conversation");
+
+function addMessage(text, type) {
+  conversation.classList.add("active");
+
+  const message = document.createElement("div");
+  message.className = "message " + type;
+  message.textContent = text;
+
+  chatArea.appendChild(message);
+  return message;
 }
+
+function sendMessage() {
+  const question = input.value.trim();
+  if (!question) return;
+
+  addMessage(question, "user-message");
+  input.value = "";
+
+  const q = question.toLowerCase();
+  let category = "";
+
+  if (/crab|seafood|oyster|shrimp/.test(q))
+    category = "seafood";
+  else if (/breakfast|brunch|pancake/.test(q))
+    category = "breakfast";
+  else if (/rain|indoor/.test(q))
+    category = "rainy_day";
+  else if (/date|romantic|anniversary/.test(q))
+    category = "date_night";
+  else if (/nightlife|club|bar|music|dance/.test(q))
+    category = "nightlife";
+  else if (/teen|arcade|go.kart/.test(q))
+    category = "teens";
+  else if (/shop|store|outlet|souvenir/.test(q))
+    category = "shopping";
+  else if (/free|cheap|budget/.test(q))
+    category = "free_and_budget";
+  else if (/family|kid|child/.test(q))
+    category = "family";
+  else if (/late|tonight/.test(q))
+    category = "open_late";
+  else if (/food|eat|restaurant|dinner|lunch/.test(q))
+    category = "food";
+  else if (/activity|attraction|fun|boardwalk|beach/.test(q))
+    category = "things_to_do";
+
+  if (!category) {
+    const all = Object.entries(knowledge);
+    const found = all.find(([key, places]) =>
+      Array.isArray(places) &&
+      places.some(place =>
+        place.name.toLowerCase().includes(q)
+      )
+    );
+    if (found) category = found[0];
+  }
+
+  const places = knowledge[category];
+
+  if (!places || !places.length) {
+    addMessage(
+      "I don't have a matching recommendation yet. " +
+      "Try asking about seafood, restaurants, " +
+      "nightlife, shopping, or family activities. " +
+      "If nothing works, check that oc-knowledge.json " +
+      "is uploaded correctly.",
+      "genie-message"
+    );
+    return;
+  }
+
+  const reply = addMessage(
+    "✨ Here are some Ocean City recommendations:",
+    "genie-message"
+  );
+
+  places.slice(0, 3).forEach(place => {
+    const card = document.createElement("div");
+    card.className = "result";
+
+    const title = document.createElement("strong");
+    title.textContent = place.name;
+    card.appendChild(title);
+
+    const details = document.createElement("p");
+    details.textContent =
+      [place.area, place.price].filter(Boolean).join(" · ");
+    card.appendChild(details);
+
+    const tip = document.createElement("p");
+    tip.textContent = place.genie_tip || "";
+    card.appendChild(tip);
+
+    if (place.address) {
+      const address = document.createElement("p");
+      address.textContent = "📍 " + place.address;
+      card.appendChild(address);
+    }
+
+    reply.appendChild(card);
+  });
+}
+
+function quickQuestion(question) {
+  input.value = question;
+  sendMessage();
+}
+
+document.getElementById("askForm")
+  .addEventListener("submit", event => {
+    event.preventDefault();
+    sendMessage();
+  });
+
+document.querySelectorAll("[data-question]")
+  .forEach(button => {
+    button.addEventListener("click", () => {
+      quickQuestion(button.dataset.question);
+    });
+  });
+</script>
